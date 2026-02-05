@@ -1,7 +1,6 @@
 # ClassroomAI
 
 ![Banner Image](public/Banner.png)
-*(Optional: Replace `public/Banner.png` with a path to a more specific project screenshot or logo if you have one.)*
 
 ## Empowering Education with AI-Driven Learning
 
@@ -25,7 +24,7 @@ ClassroomAI is an innovative web application designed to enhance the learning ex
 *   **Next.js:** A React framework for production.
 *   **React:** Frontend JavaScript library for building user interfaces.
 *   **TypeScript:** Type-safe JavaScript for robust development.
-*   **Tailwind CSS (Presumed):** For rapid UI development and styling (based on typical Next.js setups).
+*   **Tailwind CSS:** For rapid UI development and styling.
 *   **ESLint:** For maintaining code quality and consistency.
 
 ---
@@ -45,12 +44,11 @@ Make sure you have Node.js and npm (or yarn) installed.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/ClassroomAI.git
-    # Replace YOUR_USERNAME with your GitHub username and ClassroomAI with your repo name
+    git clone https://github.com/OpenPointer-Inc/Classroom-AI.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd ClassroomAI
+    cd Classroom-AI
     ```
 3.  **Install dependencies:**
     ```bash
@@ -86,62 +84,8 @@ ClassroomAI provides an intuitive platform for educational content delivery.
 ---
 
 ## 📂 Project Structure
-    cd ClassroomAIbuting
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! ⭐
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-*(Note: You might need to create a `LICENSE` file if you don't have one.)*
-
----
-
-## 📞 Contact
-
-Your Name/Team Name - [Your Email/Website/LinkedIn]
-
-Project Link: [https://github.com/YOUR_USERNAME/ClassroomAI](https://github.com/YOUR_USERNAME/ClassroomAI)
-    cd ClassroomAIbuting
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! ⭐
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-*(Note: You might need to create a `LICENSE` file if you don't have one.)*
-
----
-
-## 📞 Contact
-
-Your Name/Team Name - [Your Email/Website/LinkedIn]
-
-Project Link: [https://github.com/YOUR_USERNAME/ClassroomAI](https://github.com/YOUR_USERNAME/ClassroomAI)
-
-
+```
 .
 ├── app/                  # Main application pages and layouts
 │   ├── favicon.ico
@@ -163,4 +107,33 @@ Project Link: [https://github.com/YOUR_USERNAME/ClassroomAI](https://github.com/
 ├── package.json          # Project dependencies and scripts
 ├── tsconfig.json         # TypeScript configuration
 └── README.md             # This file!
+```
 
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! ⭐
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 📞 Contact
+
+OpenPointer Inc - [GitHub Organization](https://github.com/OpenPointer-Inc)
+
+Project Link: [https://github.com/OpenPointer-Inc/Classroom-AI](https://github.com/OpenPointer-Inc/Classroom-AI)
