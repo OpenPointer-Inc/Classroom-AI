@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* ===== Base Variables ===== */
+:root {
+  --background: #ffffff;
+  --foreground: #050316;
+  --tcolor: #1CD98E;
+
+}
+
+.bg-custom-bg1 {
+  background-image: url('/Banner.png'); /* Note the leading slash for public folder */
+}
+
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #050316;
+  }
+}
+
+/* ===== Tailwind Theme (v4) ===== */
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-tcolor: var(--tcolor);
+
+
+
+  /* Fonts */
+  --font-poppins: var(--font-poppins), system-ui, sans-serif;
+  --font-geist: var(--font-geist-sans), system-ui, sans-serif;
+  --font-geist-mono: var(--font-geist-mono), monospace;
+  --font-rubik: var(--font-rubik), system-ui, sans-serif;
+}
+
+/* ===== Base Styles ===== */
+body {
+  color: #050316;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-rubik), system-ui, sans-serif;
+}
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 7px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #EBEDEC; /* Color of the track */
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e68b9; /* Color of the scrollbar thumb */
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0047aa; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #2e68b9 #EBEDEC; /* thumb and track colors */
+}
