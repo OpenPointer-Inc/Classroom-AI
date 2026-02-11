@@ -20,7 +20,7 @@ export default function Footer() {
                   decoding="async"
                   className="mb-2 h-20 w-auto cursor-pointer"
                   style={{ color: "transparent" }}
-                  src="/Logo Openpointer white.svg"
+                  src="/LOGO white.svg"
                 />
               </a>
 
