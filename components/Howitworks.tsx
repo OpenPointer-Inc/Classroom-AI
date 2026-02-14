@@ -134,9 +134,9 @@ export default function Howitworks() {
                 >
                     <motion.div
                         style={{ opacity: initialTextOpacity }}
-                        className="absolute inset-x-0 top-20 flex items-center justify-center pointer-events-none z-20"
+                        className="absolute inset-x-0 flex items-center justify-center pointer-events-none z-20"
                     >
-                        <h2 className="text-white text-3xl md:text-5xl font-bold tracking-tight">How it works?</h2>
+                        <h2 className="text-white text-3xl md:text-xl font-bold tracking-tight">How it works?</h2>
                     </motion.div>
 
                     <motion.div
@@ -156,9 +156,9 @@ export default function Howitworks() {
 
                     <motion.div style={{ opacity: text1Opacity }} className="absolute inset-0 flex items-center justify-center pointer-events-none z-30">
                         <div className="text-center">
-                            <h2 className="text-green-400 text-lg font-mono mb-2 tracking-widest uppercase">Moto Zoo Services</h2>
+                            <h2 className="text-green-400 text-lg font-mono mb-2 tracking-widest uppercase">Moto Classroom AI</h2>
                             <h1 className="text-white text-5xl md:text-7xl font-black tracking-tighter leading-none">
-                                NATURE<br />WALKS.
+                                BOOKS<br />TALKS.
                             </h1>
                         </div>
                     </motion.div>
@@ -167,7 +167,7 @@ export default function Howitworks() {
                         <div className="max-w-xl">
                             <h3 className="text-white/60 text-xl md:text-2xl font-medium mb-2">01.</h3>
                             <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
-                                Precision<br />Engineering.
+                                Everything<br />Customizable.
                             </h2>
                             <p className="text-white/80 mt-4 text-lg">
                                 Experience the seamless motion of nature.

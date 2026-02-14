@@ -43,11 +43,11 @@ export default function Navigation() {
         {/* Navigation Links */}
         <nav className="mt-6 hidden items-center gap-10 text-sm lg:text-base font-medium lg:flex">
           <Link
-            aria-label="Flagship-Program"
+            aria-label="Home"
             className="text-black hover:text-[#00D188] transition-colors"
-            href="/flagship-program"
+            href="/"
           >
-            Flagship-Program
+            Home
           </Link>
           <Link
             aria-label="Demos"

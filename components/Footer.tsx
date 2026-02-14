@@ -67,7 +67,7 @@ export default function Footer() {
                 </a>
 
                 {/* LinkedIn */}
-                <a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/company/panaversity/">
+                <a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/company/openpointer/">
                   <svg
                     fill="currentColor"
                     viewBox="0 0 448 512"
