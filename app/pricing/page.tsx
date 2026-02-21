@@ -1,10 +1,10 @@
 
-import Top from '@/components/Top';
+import Pricing from '@/components/Pricing';
 
-export default function Home() {
+export default function PricingPage() {
   return (
     <main className="min-h-screen">
-      <Top />
+      <Pricing />
     </main>
   );
 }

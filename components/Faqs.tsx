@@ -4,24 +4,24 @@ import React, { useState } from "react";
 
 const faqs = [
     {
-        question: "What is a Certified Agentic and Robotic AI Engineer?",
-        answer: "A Certified Agentic and Robotic AI Engineer is a professional who specializes in building autonomous agents and robotic systems powered by advanced AI. They focus on creating systems that can perceive their environment, reason about tasks, and take actions in the physical or digital world.",
+        question: "How Classroom AI helps Students?",
+        answer: "Classroom AI is a platform that helps students learn and grow by providing them with the tools and resources they need to succeed. It offers a range of features that can help students improve their grades, develop new skills, and achieve their goals.",
     },
     {
-        question: "How valuable can the Certified Agentic and Robotic AI Engineer Program be in the new age of Agentic AI?",
-        answer: "As we move into the era of Agentic AI, the ability to build self-directing agents is becoming critical. This program provides the skills needed to lead this transformation, making you highly valuable to tech companies, research labs, and startups looking to automate complex workflows.",
+        question: "How valuable can Classroom AI be in the new age of Modern Education system?",
+        answer: "As we move into the era of AI, We have build smart teaching Agents that help students excel in their academic career, we are providing personalized learning to students by using modern teaching methodologies and the power of AI",
     },
     {
         question: "Why should I choose this program?",
         answer: "This program offers a unique blend of theoretical knowledge and practical application. You'll work with state-of-the-art tools, learn from industry experts, and build a portfolio of real-world projects that demonstrate your ability to create advanced AI agents.",
     },
     {
-        question: "What is the potential for Certified Agentic and Robotic AI Engineers to start their own companies and become successful startup founders?",
-        answer: "The demand for agentic systems is exploding across industries. With the skills gained in this program, you'll be uniquely positioned to identify market gaps and build innovative products, giving you a strong foundation to launch your own successful AI startup.",
+        question: "What are the chances of my success in my academic career?",
+        answer: "In this modern era, the modern personalized learning system is the key to success, and Classroom AI is the best platform for that. We are providing personalized learning to students by using modern teaching methodologies and the power of AI",
     },
     {
-        question: "What are the different specialisations offered at the end of the program and what are their benefits?",
-        answer: "The program offers specializations in areas like Physical Robotics, Digital Process Automation, and LLM Agent Frameworks. Each specialization is designed to deepen your expertise in a specific high-growth niche, increasing your career options and earning potential.",
+        question: "Which Subjects and courses are offered in this platfrom?",
+        answer: "The platfrom offers various subjects. During onboarding process you will be asked to select subjects of your interest. Each subject is designed to deepen your expertise in a specific high-growth niche. We are currently providing Cambridge highschool courses such as O-levels/A-levels.",
     },
 ];
 

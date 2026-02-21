@@ -1,9 +1,9 @@
-import Top from '@/components/Top';
+import Demo from '@/components/Demo';
 
 export default function Home() {
     return (
         <main className="min-h-screen">
-            <Top />
+            <Demo />
         </main>
     );
 }

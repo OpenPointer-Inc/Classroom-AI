@@ -179,7 +179,7 @@ export default function Howitworks() {
                         <div className="text-right max-w-xl">
                             <h3 className="text-white/60 text-xl md:text-2xl font-medium mb-2">02.</h3>
                             <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
-                                Titanium<br />Drivers.
+                                Everything<br />Personalized.
                             </h2>
                             <p className="text-white/80 mt-4 text-lg">
                                 Strong, durable, and built for the wild.
@@ -189,10 +189,10 @@ export default function Howitworks() {
 
                     <motion.div style={{ opacity: text4Opacity }} className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-30">
                         <h1 className="text-white text-6xl md:text-8xl font-black mb-8 tracking-tighter text-center">
-                            Hear Everything.
+                            Make it yours.
                         </h1>
                         <button className="pointer-events-auto px-10 py-4 bg-white text-black text-xl font-bold rounded-full hover:scale-105 transition-transform duration-300">
-                            Book a Visit
+                            Get started
                         </button>
                     </motion.div>
 

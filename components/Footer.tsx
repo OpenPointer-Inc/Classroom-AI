@@ -11,9 +11,9 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <div className="mb-6 lg:-mt-9 xl:-mt-4">
-              <a aria-label="Panaversity Home" href="/">
+              <a aria-label="ClassroomAI Home" href="/">
                 <Image
-                  alt="Panaversity logo"
+                  alt="ClassroomAI logo"
                   loading="lazy"
                   width="8880"
                   height="4200"
@@ -114,7 +114,7 @@ export default function Footer() {
               <a
                 target="_blank"
                 aria-label="Join WhatsApp Community"
-                href="https://whatsapp.com/channel/0029VanobNVHbFV2oZLXX125"
+                href="https://whatsapp.com/channel/0029VbC7rmG4yltPkMCmBv0W"
                 className="inline-flex items-center gap-3 rounded-lg border border-gray-600 bg-gray-800/50 px-4 py-3 text-gray-300 transition-all duration-200 ease-in-out hover:border-green-400 hover:bg-green-400/10 hover:text-green-400"
               >
                 <svg

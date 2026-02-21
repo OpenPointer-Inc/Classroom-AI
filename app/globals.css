@@ -9,7 +9,8 @@
 }
 
 .bg-custom-bg1 {
-  background-image: url('/Banner.png'); /* Note the leading slash for public folder */
+  background-image: url('/Banner.png');
+  /* Note the leading slash for public folder */
 }
 
 /* ===== Dark Mode ===== */
@@ -43,27 +44,34 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-rubik), system-ui, sans-serif;
 }
+
 /* For WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-  width: 7px; /* Width of the scrollbar */
+  width: 7px;
+  /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #EBEDEC; /* Color of the track */
+  background: #EBEDEC;
+  /* Color of the track */
   border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2e68b9; /* Color of the scrollbar thumb */
+  background: #00C95F;
+  /* Color of the scrollbar thumb */
   border-radius: 7px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0047aa; /* Color of the scrollbar thumb on hover */
+  background: #00C95F;
+  /* Color of the scrollbar thumb on hover */
 }
 
 /* For Firefox */
 body {
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #2e68b9 #EBEDEC; /* thumb and track colors */
+  scrollbar-width: thin;
+  /* "auto" or "thin" */
+  scrollbar-color: #00C95F #EBEDEC;
+  /* thumb and track colors */
 }
