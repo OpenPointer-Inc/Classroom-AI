@@ -55,7 +55,7 @@ export default function FeatureSection() {
                     STEP 1
                   </div>
                   <h2 className="font-poppins mb-4 text-lg font-bold text-textPrimary">
-                    ENROLL
+                    INTERACTIVE
                   </h2>
                   <div className="flex-grow overflow-y-auto pr-2">
                     <p className="text-justify text-sm leading-relaxed text-textSecondary">

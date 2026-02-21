@@ -28,10 +28,8 @@ export default function Top() {
             </h1>
 
             <p className={`${inter.className} mt-6 text-[0.9rem] leading-8 text-textSecondary md:text-[1.1rem]`}>
-              Access Live Classes and Labs on{" "}
-              <span className="gradient-border2">Zoom</span> from Anywhere
-              Worldwide – Choose Between Dedicated English or Urdu/Hindi{" "}
-              <span className="gradient-border2">Sections!</span>
+              No Static Videos, No Pre-crafted Assessments, No Recorded Lectures{" "}
+              <span className="gradient-border2">Everything is live and interactive.</span> Get started Now!
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-x-6">

@@ -156,7 +156,7 @@ export default function Howitworks() {
 
                     <motion.div style={{ opacity: text1Opacity }} className="absolute inset-0 flex items-center justify-center pointer-events-none z-30">
                         <div className="text-center">
-                            <h2 className="text-green-400 text-lg font-mono mb-2 tracking-widest uppercase">Moto Classroom AI</h2>
+                            <h2 className="text-green-400 text-lg font-mono mb-2 tracking-widest uppercase">Classroom AI</h2>
                             <h1 className="text-white text-5xl md:text-7xl font-black tracking-tighter leading-none">
                                 BOOKS<br />TALKS.
                             </h1>

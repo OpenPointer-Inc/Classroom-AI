@@ -25,7 +25,7 @@ export default function Footer() {
               </a>
 
               <p className="mb-1 mt-1 text-sm leading-relaxed text-gray-400">
-                Panaversity is a cloud-native learning platform for Agentic AI, robotics, and next-gen AI skills.
+                Classroom AI is a AI-powered learning platform for High School and College Students.
               </p>
 
               {/* Social Links */}
