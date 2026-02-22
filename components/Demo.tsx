@@ -80,7 +80,7 @@ export default function Demo() {
                         transition={{ duration: 0.6 }}
                     >
                         <h2 className="text-emerald-600 font-bold tracking-widest uppercase text-sm mb-4">See It In Action</h2>
-                        <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 text-[#050316]">
+                        <h1 className="text-5xl md:text-7xl font-black tracking-tight font-rubik leading-tight mb-6 text-[#050316]">
                             Master your coursework in <span className="text-emerald-600">record time.</span>
                         </h1>
                         <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto">
