@@ -170,7 +170,7 @@ export default function Howitworks() {
                                 Everything<br />Customizable.
                             </h2>
                             <p className="text-white/80 mt-4 text-lg">
-                                Experience the seamless motion of nature.
+                                Experience the power of AI in education.
                             </p>
                         </div>
                     </motion.div>
@@ -182,7 +182,7 @@ export default function Howitworks() {
                                 Everything<br />Personalized.
                             </h2>
                             <p className="text-white/80 mt-4 text-lg">
-                                Strong, durable, and built for the wild.
+                                Our Teachers get personalized with students.
                             </p>
                         </div>
                     </motion.div>
