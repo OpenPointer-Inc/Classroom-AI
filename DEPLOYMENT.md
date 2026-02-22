@@ -1,6 +1,6 @@
-# Deployment Guide for ClassroomAI
+# Deployment Guide for Classroom AI
 
-This guide covers deploying ClassroomAI to various platforms.
+This guide covers deploying Classroom AI to various platforms.
 
 ## ✅ Pre-Deployment Checklist
 

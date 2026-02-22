@@ -11,9 +11,9 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <div className="mb-6 lg:-mt-9 xl:-mt-4">
-              <a aria-label="ClassroomAI Home" href="/">
+              <a aria-label="Classroom AI Home" href="/">
                 <Image
-                  alt="ClassroomAI logo"
+                  alt="Classroom-AI logo"
                   loading="lazy"
                   width="8880"
                   height="4200"

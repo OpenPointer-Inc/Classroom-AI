@@ -84,7 +84,7 @@ export default function Demo() {
                             Master your Coursework in <span className="text-[#16BD7A]">Record Time.</span>
                         </h1>
                         <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto">
-                            Watch how top students use ClassroomAI to bypass busywork and focus entirely on deep comprehension.
+                            Watch how top students use Classroom AI to bypass busywork and focus entirely on deep comprehension.
                         </p>
                     </motion.div>
                 </header>
