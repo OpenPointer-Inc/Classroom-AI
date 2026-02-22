@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Poppins, Inter } from "next/font/google";
-
+import ComingSoonModal from "./ComingSoonModal";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -14,6 +14,7 @@ const inter = Inter({
 });
 
 export default function Top() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="relative bg-white">
       <div className="relative isolate px-6 lg:px-8">
@@ -35,8 +36,8 @@ export default function Top() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 aria-label="Go to courses offered page"
-                className={`${inter.className} bg-[#1CD98E] group relative inline-flex items-center overflow-hidden rounded-[40px] bg-accent px-6 py-2.5 text-sm font-semibold text-textPrimary hover:bg-white hover:border-2 border-2 border-white hover:border-[#1CD98E] hover:text-black sm:px-12 sm:py-4 sm:text-[0.9rem] text-white`}
-                href="/flagship-program/courses"
+                className={`${inter.className} bg-[#1CD98E] cursor-pointer group relative inline-flex items-center overflow-hidden rounded-[40px] bg-accent px-6 py-2.5 text-sm font-semibold text-textPrimary hover:bg-white hover:border-2 border-2 border-white hover:border-[#1CD98E] hover:text-black sm:px-12 sm:py-4 sm:text-[0.9rem] text-white`}
+                onClick={() => setIsModalOpen(true)}
               >
                 <span className="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-transparent opacity-100 transition-all group-hover:top-0 group-hover:h-full"></span>
                 <span className="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0">
@@ -55,7 +56,7 @@ export default function Top() {
                     ></path>
                   </svg>
                 </span>
-                <span className="relative">Start Your AI Journey</span>
+                <span className="relative">Start Your Journey</span>
               </a>
             </div>
           </div>
@@ -76,6 +77,7 @@ export default function Top() {
           ></video>
         </div>
       </div>
+      <ComingSoonModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 }

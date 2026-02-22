@@ -86,8 +86,8 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="/#about" className="text-gray-400 hover:text-gray-300">About Us</a></li>
-              <li><a href="/flagship-program" className="text-gray-400 hover:text-gray-300">Flagship Program</a></li>
-              <li><a href="/flagship-program/courses" className="text-gray-400 hover:text-gray-300">Courses</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-gray-300">Flagship Program</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-gray-300">Courses</a></li>
               <li><a href="/terms-and-conditions" className="text-gray-400 hover:text-gray-300">Terms & Conditions</a></li>
               <li><a href="/certifications" className="text-gray-400 hover:text-gray-300">Certifications</a></li>
             </ul>
