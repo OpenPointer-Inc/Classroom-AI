@@ -34,7 +34,7 @@ export default function Top() {
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <button
                 aria-label="Go to courses offered page"
                 className={`${inter.className} bg-[#1CD98E] cursor-pointer group relative inline-flex items-center overflow-hidden rounded-[40px] bg-accent px-6 py-2.5 text-sm font-semibold text-textPrimary hover:bg-white hover:border-2 border-2 border-white hover:border-[#1CD98E] hover:text-black sm:px-12 sm:py-4 sm:text-[0.9rem] text-white`}
                 onClick={() => setIsModalOpen(true)}
@@ -57,7 +57,7 @@ export default function Top() {
                   </svg>
                 </span>
                 <span className="relative">Start Your Journey</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
