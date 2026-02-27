@@ -20,13 +20,16 @@ export default function Top() {
       <div className="relative isolate px-6 lg:px-8">
         <div className="mx-auto max-w-5xl pt-16 sm:pt-24 md:pt-28 lg:pt-32">
           <div className="text-center">
-            <h1 className={`${poppins.className} text-[2rem] font-bold tracking-tight text-textPrimary xs:text-[2.5rem] sm:text-[3rem] md:text-[4rem]`}>
+            <h1 className={`${poppins.className} hidden text-md font-thin tracking-tight text-textPrimary`}>
+              Classroom AI
+            </h1>
+            <h2 className={`${poppins.className} text-[2rem] font-bold tracking-tight text-textPrimary xs:text-[2.5rem] sm:text-[3rem] md:text-[4rem]`}>
               Learn Anything with{" "}
-              <span className="bg-gradient-to-r from-[#0d8f5b] to-[#1cd98e] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#0d8f5b] to-[#1cd98e] bg-clip-text text-transparent">
                 Smart AI Tutors
               </span>{" "}
               in Live Classes
-            </h1>
+            </h2>
 
             <p className={`${inter.className} mt-6 text-[0.9rem] leading-8 text-textSecondary md:text-[1.1rem]`}>
               No Static Videos, No Pre-crafted Assessments, No Recorded Lectures{" "}
