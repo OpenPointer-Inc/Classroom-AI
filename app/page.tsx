@@ -12,7 +12,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Classroom AI",
-    "image": "https://classroomai.org/og-image.png",
+    // "image": "https://classroomai.org/og-image.png",
     "description": "Classroom AI is an AI-powered Learning Management System that helps Higher School Students learn better. We offer O-levels, A-levels, Federal board and Lahore Board Courses Taught By AI agents here. We Provide personalized learning experience to students, so that they can perform better.",
     "operatingSystem": "Windows, macOS, Linux, Web Browser",
     "applicationCategory": "EdTech, Education",
@@ -27,13 +27,14 @@ export default function Home() {
       "Interactive Classes by AI Tutors",
       "Personalized Learning Experience"
     ],
-    // "creator": {
-    //     "@type": "Organization",
-    //     "@id": "https://Openpointer.org/",
-    //     "name": "Openpointer",
-    //     "url": "https://Openpointer.org",
-    //     "logo": "https://Openpointer.org/logo.png"
-    //   }
+    "creator": {
+      "@type": "Organization",
+      // "@id": "https://Openpointer.org/",
+      "name": "Openpointer",
+      // "url": "https://Openpointer.org",
+      // "logo": "https://Openpointer.org/logo.png"
+    },
+
   };
   return (
     <main className="min-h-screen">
