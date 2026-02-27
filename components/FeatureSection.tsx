@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function FeatureSection() {
@@ -63,9 +64,9 @@ export default function FeatureSection() {
                     </p>
                   </div>
                   <div className="mt-2 border-t-2 border-gray-300 pt-4">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+
+
                       href="/panaversity_guide.pdf"
                       className="group flex w-fit items-center gap-3 rounded-lg bg-gradient-to-r from-green-400 to-green-600 px-6 py-3 text-sm font-medium text-white shadow-md transition-all hover:translate-x-1"
                     >
@@ -83,7 +84,7 @@ export default function FeatureSection() {
                         <path d="M5 12h14" />
                         <path d="m12 5 7 7-7 7" />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

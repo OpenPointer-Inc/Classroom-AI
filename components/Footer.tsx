@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#031811] pt-[4.5rem] text-white">
@@ -86,10 +86,10 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
             <ul className="space-y-2 text-sm">
               {/* <li><a href="/about" className="text-gray-400 hover:text-gray-300">About Us</a></li> */}
-              <li><a href="/" className="text-gray-400 hover:text-gray-300">Flagship Program</a></li>
-              <li><a href="/" className="text-gray-400 hover:text-gray-300">Courses</a></li>
-              <li><a href="/terms-and-conditions" className="text-gray-400 hover:text-gray-300">Terms & Conditions</a></li>
-              <li><a href="/certifications" className="text-gray-400 hover:text-gray-300">Certifications</a></li>
+              <li><Link href="/" className="text-gray-400 hover:text-gray-300">Flagship Program</Link></li>
+              <li><Link href="/" className="text-gray-400 hover:text-gray-300">Courses</Link></li>
+              <li><Link href="/terms-and-conditions" className="text-gray-400 hover:text-gray-300">Terms & Conditions</Link></li>
+              <li><Link href="/certifications" className="text-gray-400 hover:text-gray-300">Certifications</Link></li>
             </ul>
           </div>
 
@@ -97,13 +97,13 @@ export default function Footer() {
           <div className="lg:ml-20">
             <h3 className="mb-4 text-lg font-semibold text-white">Support</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/contact" className="text-gray-400 hover:text-gray-300">Contact Us</a></li>
-              <li><a href="/team" className="text-gray-400 hover:text-gray-300">Our Team</a></li>
-              <li><a href="/privacy-policy" className="text-gray-400 hover:text-gray-300">Privacy Policy</a></li>
-              <li><a href="/panaversity_guide.pdf" className="text-gray-400 hover:text-gray-300">How To Enroll</a></li>
-              <li><a href="/#faqs" className="text-gray-400 hover:text-gray-300">FAQs</a></li>
-              <li><a href="/exam-policy" className="text-gray-400 hover:text-gray-300">Exam Policy</a></li>
-              <li><a href="/examination_flow.pdf" className="text-gray-400 hover:text-gray-300">Examination Flow</a></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-gray-300">Contact Us</Link></li>
+              <li><Link href="/team" className="text-gray-400 hover:text-gray-300">Our Team</Link></li>
+              <li><Link href="/privacy-policy" className="text-gray-400 hover:text-gray-300">Privacy Policy</Link></li>
+              <li><Link href="/panaversity_guide.pdf" className="text-gray-400 hover:text-gray-300">How To Enroll</Link></li>
+              <li><Link href="/#faqs" className="text-gray-400 hover:text-gray-300">FAQs</Link></li>
+              <li><Link href="/exam-policy" className="text-gray-400 hover:text-gray-300">Exam Policy</Link></li>
+              <li><Link href="/examination_flow.pdf" className="text-gray-400 hover:text-gray-300">Examination Flow</Link></li>
             </ul>
           </div>
 

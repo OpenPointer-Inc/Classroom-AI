@@ -25,6 +25,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Demo() {
     const features = [
@@ -211,9 +212,9 @@ export default function Demo() {
                                 Start Free Trial
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                             </button>
-                            <a href="/pricing" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 font-bold rounded-xl transition-colors text-white">
+                            <Link href="/pricing" className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 font-bold rounded-xl transition-colors text-white">
                                 View Pricing Plans
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
                 </div>
