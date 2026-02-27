@@ -27,6 +27,7 @@ export default function Home() {
       "Interactive Classes by AI Tutors",
       "Personalized Learning Experience"
     ],
+    "keywords": "AI powered Education,AI powered Learning, Classroom AI, personalized learning, AI Tutors, Openpointer",
     "creator": {
       "@type": "Organization",
       // "@id": "https://Openpointer.org/",
@@ -34,6 +35,10 @@ export default function Home() {
       // "url": "https://Openpointer.org",
       // "logo": "https://Openpointer.org/logo.png"
     },
+    "sameAs": [
+      "https://www.youtube.com/@openpointer",
+      "https://www.linkedin.com/company/openpointer",
+    ]
 
   };
   return (
