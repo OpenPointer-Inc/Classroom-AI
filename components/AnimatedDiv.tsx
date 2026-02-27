@@ -51,14 +51,14 @@ export default function AnimatedDiv() {
                     style={{ opacity: titleOpacity, scale: titleScale, y: titleY }}
                     className="z-10 text-center max-w-2xl px-4"
                 >
-                    <h1 className="text-6xl font-bold text-black mb-6 tracking-tight leading-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 md:mb-6 tracking-tight leading-tight">
                         Collaborating with <br />
                         <span className="text-gray-900">5+ Academic Programs</span>
                     </h1>
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="mt-10 px-8 py-4 cursor-pointer bg-[#1CD98E] text-white rounded-full text-lg font-semibold shadow-lg hover:bg-[#00f090] transition-colors"
+                        className="mt-6 md:mt-10 px-6 py-3 md:px-8 md:py-4 cursor-pointer bg-[#1CD98E] text-white rounded-full text-base md:text-lg font-semibold shadow-lg hover:bg-[#00f090] transition-colors"
                     >
                         Explore all Programs
                     </motion.button>
@@ -86,8 +86,8 @@ export default function AnimatedDiv() {
                             }}
                             className="absolute z-0"
                         >
-                            <div className="relative group p-2">
-                                <div className={`relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[240px] md:h-[240px] rounded-3xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-105`}>
+                            <div className="relative group p-1 md:p-2">
+                                <div className={`relative w-[90px] h-[90px] sm:w-[140px] sm:h-[140px] md:w-[180px] md:h-[180px] lg:w-[240px] lg:h-[240px] rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl transition-transform duration-500 group-hover:scale-105`}>
                                     <Image
                                         src={img.src}
                                         alt={img.alt}
@@ -95,7 +95,7 @@ export default function AnimatedDiv() {
                                         className="object-cover"
                                     />
                                     {img.label && (
-                                        <div className={`absolute bottom-4 left-4 ${img.color || 'bg-white'} px-4 py-1.5 rounded-full text-xs font-bold shadow-md whitespace-nowrap`}>
+                                        <div className={`absolute bottom-2 left-2 md:bottom-4 md:left-4 ${img.color || 'bg-white'} px-2 py-1 md:px-4 md:py-1.5 rounded-full text-[10px] sm:text-xs font-bold shadow-md whitespace-nowrap`}>
                                             {img.label}
                                         </div>
                                     )}
