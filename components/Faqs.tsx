@@ -43,7 +43,7 @@ const Faqs = () => {
                         </h2>
 
                         <p className="text-[#64748B] text-lg leading-relaxed max-w-md font-poppins">
-                            Find answers to the most common questions about the Certified Agentic and Robotic AI Engineer program.
+                            Find answers to the most common questions about Classroom AI.
                         </p>
                     </div>
 

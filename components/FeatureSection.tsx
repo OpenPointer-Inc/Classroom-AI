@@ -8,9 +8,9 @@ export default function FeatureSection() {
         <div className="relative z-10">
           {/* Heading Section */}
           <div className="mb-10 flex flex-col items-center justify-center text-center lg:mb-0">
-            <h2 className="gradient-border w-fit border-b text-sm font-semibold uppercase tracking-wide text-textPrimary sm:text-md md:text-lg">
-              Career-Ready Path
-            </h2>
+            <h1 className="gradient-border w-fit border-b text-sm font-semibold uppercase tracking-wide text-textPrimary sm:text-md md:text-lg">
+              Classroom AI
+            </h1>
             <h3 className="font-poppins mb-4 mt-2 text-center text-2xl font-semibold tracking-tight text-primary xs:text-3xl sm:text-4xl md:text-5xl">
               A Major Evolution in Education{" "}
               <span className="text-[#1CD98E]">COMING SOON!</span>
