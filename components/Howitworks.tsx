@@ -167,10 +167,10 @@ export default function Howitworks() {
                         <div className="max-w-xl">
                             <h3 className="text-white/60 text-xl md:text-2xl font-medium mb-2">01.</h3>
                             <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
-                                Everything<br />Customizable.
+                                MADE LEARNING<br />ADDICTIVE.
                             </h2>
                             <p className="text-white/80 mt-4 text-lg">
-                                Experience the power of AI in education.
+                                We are making Learning Addictive as much as Social Media.
                             </p>
                         </div>
                     </motion.div>
@@ -179,10 +179,10 @@ export default function Howitworks() {
                         <div className="text-right max-w-xl">
                             <h3 className="text-white/60 text-xl md:text-2xl font-medium mb-2">02.</h3>
                             <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
-                                Everything<br />Personalized.
+                                MADE LEARNING<br />PERSONALIZED.
                             </h2>
                             <p className="text-white/80 mt-4 text-lg">
-                                Our Teachers get personalized with students.
+                                Our AI Tutors get personalized with you.
                             </p>
                         </div>
                     </motion.div>

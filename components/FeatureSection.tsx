@@ -67,7 +67,7 @@ export default function FeatureSection() {
                     <Link
 
 
-                      href="/panaversity_guide.pdf"
+                      href="/"
                       className="group flex w-fit items-center gap-3 rounded-lg bg-gradient-to-r from-green-400 to-green-600 px-6 py-3 text-sm font-medium text-white shadow-md transition-all hover:translate-x-1"
                     >
                       <span>View Guide</span>
