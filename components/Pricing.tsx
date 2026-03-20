@@ -23,6 +23,13 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+    variable: '--font-poppins',
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700', '800', '900'],
+});
 
 export default function Pricing() {
     const [isAnnual, setIsAnnual] = useState(false);
@@ -70,7 +77,7 @@ export default function Pricing() {
     ];
 
     return (
-        <section className="relative min-h-screen py-32 px-6 md:px-12 lg:px-24 overflow-hidden text-gray-900 selection:bg-emerald-500/20">
+        <section className={`${poppins.className} relative min-h-screen py-32 px-6 md:px-12 lg:px-24 overflow-hidden text-gray-900 selection:bg-emerald-500/20`}>
             {/* Soft Background Orbs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
                 <motion.div

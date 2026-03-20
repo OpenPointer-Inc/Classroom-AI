@@ -26,6 +26,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+    variable: '--font-poppins',
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700', '800', '900'],
+});
 
 export default function Demo() {
     const features = [
@@ -64,7 +71,7 @@ export default function Demo() {
     ];
 
     return (
-        <main className="w-full font-poppins antialiased overflow-hidden">
+        <main className={`${poppins.className} w-full antialiased overflow-hidden`}>
 
             {/* 
               SECTION 1: LIGHT MODE (The Demonstration)
@@ -81,7 +88,7 @@ export default function Demo() {
                         transition={{ duration: 0.6 }}
                     >
                         <h2 className="text-emerald-600 font-bold tracking-widest uppercase text-sm mb-4">See It In Action</h2>
-                        <h1 className="text-5xl md:text-7xl font-black tracking-tight font-rubik leading-tight mb-6 text-[#0c0c0c]">
+                        <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 text-[#0c0c0c]">
                             Master your Coursework in <span className="text-[#16BD7A]">Record Time.</span>
                         </h1>
                         <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto">
