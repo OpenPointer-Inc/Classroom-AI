@@ -59,7 +59,7 @@ export default function FeatureSection() {
                   </h2>
                   <div className="flex-grow overflow-y-auto pr-2">
                     <p className="text-justify text-sm leading-relaxed text-textSecondary">
-                      Begin your AI educational experience through our streamlined enrollment portal. Panaversity is designed to make your first step into AI education simple, transparent, and fully supported.
+                      Begin your AI educational experience through our streamlined enrollment portal. Classroom AI is designed to make your first step into AI education simple, transparent, and fully supported.
                     </p>
                   </div>
                   <div className="mt-2 border-t-2 border-gray-300 pt-4">
