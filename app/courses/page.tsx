@@ -86,7 +86,7 @@ export default function CoursesPage() {
               {/* Promo Card */}
               <div className="mx-auto my-5 max-w-[520px] px-3">
                 <a
-                  href="https://agentfactory.panaversity.org/"
+                  // href="https://agentfactory.panaversity.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative block overflow-hidden rounded-xl border border-white/20 bg-gradient-to-br from-emerald-50 to-teal-50 p-5 shadow-xl transition-all hover:scale-[1.02]"
