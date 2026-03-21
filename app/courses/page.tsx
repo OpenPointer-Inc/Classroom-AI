@@ -8,7 +8,7 @@ const COURSES = [
     title: "O-levels || Cambridge International Education System",
     description: "Comprehensive preparation for O-levels exams with expert guidance of AI Agents.",
     image: "https://i.postimg.cc/2yKPr20h/course-5.webp",
-    // href: "/courses/O-levels",
+    href: "/courses/O1-levels",
     isOpen: true,
   },
   {
@@ -16,7 +16,7 @@ const COURSES = [
     title: "A-levels || Cambridge International Education System",
     description: "Comprehensive preparation for A-levels exams with expert guidance of AI Agents.",
     image: "https://i.postimg.cc/XYLz3tSB/course-2.webp",
-    // href: "/flagship-program/courses/",
+    href: "/flagship-program/courses/",
     isOpen: true,
   },
   {
@@ -24,7 +24,7 @@ const COURSES = [
     title: "Federal Board of Intermediate and Secondary Education",
     description: "Comprehensive preparation for FBISE exams with expert guidance of AI Agents.",
     image: "https://i.postimg.cc/KvyqTmmg/course-8.webp",
-    // href: "/flagship-program/courses/AI-400",
+    href: "/flagship-program/courses/AI-400",
     isOpen: false,
   },
   {
@@ -32,7 +32,7 @@ const COURSES = [
     title: "Entry Test preparation for Engineering and Medical Universities",
     description: "AI Assisted preparation for MDCAT || NUST || NET || ECAT || NTS exams",
     image: "https://i.postimg.cc/9ffNf1C8/course-3.webp",
-    // href: "/flagship-program/courses/AI-210",
+    href: "/flagship-program/courses/AI-210",
     isOpen: false,
   },
   {
@@ -40,7 +40,7 @@ const COURSES = [
     title: "Agentic Web",
     description: "",
     image: "https://i.postimg.cc/fT16Pqth/course-4.webp",
-    // href: "/flagship-program/courses/AI-220",
+    href: "/flagship-program/courses/AI-220",
     isOpen: false,
   },
   {
@@ -48,7 +48,7 @@ const COURSES = [
     title: "Virtual University of Pakistan",
     description: "Study for VU exams with expert guidance of AI Agents.",
     image: "https://i.postimg.cc/bYnVdZfh/course-7.webp",
-    // href: "/flagship-program/courses/AI-301",
+    href: "/flagship-program/courses/AI-301",
     isOpen: false,
   }
 ];
