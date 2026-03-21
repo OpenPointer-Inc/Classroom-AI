@@ -4,8 +4,8 @@ import React, { useState } from "react";
 
 const faqs = [
     {
-        question: "How Classroom AI helps Students?",
-        answer: "Classroom AI is a platform that helps students learn and grow by providing them with the tools and resources they need to succeed. It offers a range of features that can help students improve their grades, develop new skills, and achieve their goals.",
+        question: "How Classroom AI help Students?",
+        answer: "Classroom AI is a platform that help students learn and grow by providing them with the tools and resources they need to succeed. It offers a range of features that can help students improve their grades, develop new skills, and achieve their goals.",
     },
     {
         question: "How valuable can Classroom AI be in the new age of Modern Education system?",
