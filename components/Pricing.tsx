@@ -77,7 +77,42 @@ export default function Pricing() {
     ];
 
     return (
-        <section className={`${poppins.className} relative min-h-screen py-32 px-6 md:px-12 lg:px-24 overflow-hidden text-gray-900 selection:bg-emerald-500/20`}>
+        <section className={`${poppins.className} relative min-h-screen overflow-hidden text-gray-900 selection:bg-emerald-500/20`}>
+            {/* Hero Section */}
+            <div className="mb-32 w-full bg-slate-900 bg-teamBg bg-cover bg-center">
+                <div className="min-h-48 w-full py-2 text-center backdrop-blur-[1px] backdrop-brightness-75 sm:min-h-52 sm:py-10 md:min-h-72 lg:min-h-[26rem]">
+                    <div className="mx-auto px-4 sm:px-6 lg:max-w-[990px] lg:px-8 xl:max-w-[1200px]">
+                        {/* Breadcrumbs */}
+                        <nav className="my-4">
+                            <ol className="flex flex-wrap items-center space-x-1 text-xs font-medium text-white sm:text-sm">
+                                <li className="flex items-center">
+                                    <a href="/" className="hover:underline">Home</a>
+                                    <ChevronRight />
+                                </li>
+                                <li className="flex items-center">
+                                    <a href="/flagship-program" className="hover:underline">Flagship Program</a>
+                                    <ChevronRight />
+                                </li>
+                                <li>Pricing</li>
+                            </ol>
+                        </nav>
+
+                        <div className="m-auto mt-8 max-w-[360px] px-2 xs:max-w-[400px] sm:mt-10 sm:max-w-[630px] lg:mt-20 lg:max-w-[760px]">
+                            <h1 className="font-poppins text-[1.8rem] font-bold leading-tight text-white xs:text-[2rem] sm:text-[2.7rem] md:text-[3rem] lg:text-[3.6rem]">
+                                Pricing Plans
+                            </h1>
+                            <p className="mx-auto mb-8 mt-4 max-w-[28rem] text-sm text-white/70 xs:text-base md:text-lg">
+                                Choose the plan that's right for you
+                            </p>
+
+                            {/* Promo Card */}
+                            <div className="mx-auto my-5 max-w-[520px] px-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {/* Soft Background Orbs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
                 <motion.div
@@ -98,42 +133,8 @@ export default function Pricing() {
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
-                {/* Header Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="text-center mb-20"
-                >
-                    <h2 className="text-emerald-600 text-sm md:text-md font-mono mb-4 tracking-widest uppercase font-bold">Student Plans</h2>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none mb-6 text-gray-900">
-                        Invest in your<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-600">Cognitive Future.</span>
-                    </h1>
-                    <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mt-8 font-light">
-                        Pricing that scales with your ambition. Choose the intelligence layer that perfectly matches your academic intensity.
-                    </p>
 
-                    {/* Billing Toggle */}
-                    <div className="flex items-center justify-center mt-12 gap-5">
-                        <span className={`text-sm font-bold tracking-widest uppercase ${!isAnnual ? 'text-gray-900' : 'text-gray-400'} transition-colors`}>Monthly</span>
-                        <button
-                            onClick={() => setIsAnnual(!isAnnual)}
-                            className="relative w-20 h-10 rounded-full bg-gray-200 border border-gray-300 p-1 cursor-pointer transition-colors hover:bg-gray-300 flex items-center"
-                            aria-label="Toggle billing cycle"
-                        >
-                            <motion.div
-                                className="w-8 h-8 bg-emerald-500 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.4)]"
-                                animate={{ x: isAnnual ? 40 : 0 }}
-                                transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                            />
-                        </button>
-                        <span className={`text-sm font-bold tracking-widest uppercase flex items-center gap-3 ${isAnnual ? 'text-gray-900' : 'text-gray-400'} transition-colors`}>
-                            Annually
-                            <span className="text-xs py-1 px-3 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">Save 20%</span>
-                        </span>
-                    </div>
-                </motion.div>
+
 
                 {/* Pricing Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mb-32 relative">
@@ -210,5 +211,13 @@ export default function Pricing() {
 
             </div>
         </section>
+    );
+}
+// Simple Icon Component
+function ChevronRight() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-1">
+            <path d="m9 18 6-6-6-6" />
+        </svg>
     );
 }

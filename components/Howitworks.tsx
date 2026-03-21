@@ -165,7 +165,7 @@ export default function Howitworks() {
 
                     <motion.div style={{ opacity: text2Opacity }} className="absolute inset-0 flex items-center justify-start px-8 md:px-32 pointer-events-none z-30">
                         <div className="max-w-xl">
-                            <h3 className="text-white/60 text-xl md:text-2xl font-medium mb-2">01.</h3>
+                            <h6 className="text-white/60 text-xl md:text-2xl font-medium mb-2">01.</h6>
                             <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
                                 MADE LEARNING<br />ADDICTIVE.
                             </h2>
@@ -177,7 +177,7 @@ export default function Howitworks() {
 
                     <motion.div style={{ opacity: text3Opacity }} className="absolute inset-0 flex items-center justify-end px-8 md:px-32 pointer-events-none z-30">
                         <div className="text-right max-w-xl">
-                            <h3 className="text-white/60 text-xl md:text-2xl font-medium mb-2">02.</h3>
+                            <h6 className="text-white/60 text-xl md:text-2xl font-medium mb-2">02.</h6>
                             <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
                                 MADE LEARNING<br />PERSONALIZED.
                             </h2>

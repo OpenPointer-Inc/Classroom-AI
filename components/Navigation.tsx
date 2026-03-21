@@ -86,6 +86,13 @@ export default function Navigation() {
             >
               Pricing
             </Link>
+            <Link
+              aria-label="Courses"
+              className="text-black hover:text-[#00D188] transition-colors"
+              href="/courses"
+            >
+              Courses
+            </Link>
             {/* <Link
               target="_blank"
               aria-label="StudentBot"

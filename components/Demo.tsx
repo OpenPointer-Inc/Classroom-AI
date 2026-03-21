@@ -78,24 +78,44 @@ export default function Demo() {
               Aesthetic: Clinical, Bright, Editorial
               Goal: Show the product clearly, build immediate trust.
             */}
-            <section className="relative min-h-screen bg-gray-50 text-gray-900 py-24 px-6 md:px-12 lg:px-24 flex flex-col justify-center items-center">
+            <section className="relative pb-20 min-h-screen bg-gray-50 text-gray-900 flex flex-col justify-center items-center">
 
                 {/* SEO: Clear H1 hierarchy */}
-                <header className="max-w-4xl text-center mb-16">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="text-emerald-600 font-bold tracking-widest uppercase text-sm mb-4">See It In Action</h2>
-                        <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6 text-[#0c0c0c]">
-                            Master your Coursework in <span className="text-[#16BD7A]">Record Time.</span>
-                        </h1>
-                        <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto">
-                            Watch how top students use Classroom AI to bypass busywork and focus entirely on deep comprehension.
-                        </p>
-                    </motion.div>
-                </header>
+                {/* Hero Section */}
+                <div className="mb-32 w-full bg-slate-900 bg-teamBg bg-cover bg-center">
+                    <div className="min-h-48 w-full py-2 text-center backdrop-blur-[1px] backdrop-brightness-75 sm:min-h-52 sm:py-10 md:min-h-72 lg:min-h-[26rem]">
+                        <div className="mx-auto px-4 sm:px-6 lg:max-w-[990px] lg:px-8 xl:max-w-[1200px]">
+                            {/* Breadcrumbs */}
+                            <nav className="my-4">
+                                <ol className="flex flex-wrap items-center space-x-1 text-xs font-medium text-white sm:text-sm">
+                                    <li className="flex items-center">
+                                        <a href="/" className="hover:underline">Home</a>
+                                        <ChevronRight />
+                                    </li>
+                                    <li className="flex items-center">
+                                        <a href="/flagship-program" className="hover:underline">Flagship Program</a>
+                                        <ChevronRight />
+                                    </li>
+                                    <li>Demo</li>
+                                </ol>
+                            </nav>
+
+                            <div className="m-auto mt-8 max-w-[360px] px-2 xs:max-w-[400px] sm:mt-10 sm:max-w-[630px] lg:mt-20 lg:max-w-[760px]">
+                                <h1 className="font-poppins text-[1.8rem] font-bold leading-tight text-white xs:text-[2rem] sm:text-[2.7rem] md:text-[3rem] lg:text-[3.6rem]">
+                                    Product      Demo
+                                </h1>
+                                <p className="mx-auto mb-8 mt-4 max-w-[28rem] text-sm text-white/70 xs:text-base md:text-lg">
+                                    Watch how ClassroomAI can help you ace your exams
+                                </p>
+
+                                {/* Promo Card */}
+                                <div className="mx-auto my-5 max-w-[520px] px-3">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Video Container (Editorial presentation) */}
                 <motion.div
@@ -227,5 +247,12 @@ export default function Demo() {
                 </div>
             </section>
         </main>
+    );
+}// Simple Icon Component
+function ChevronRight() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-1">
+            <path d="m9 18 6-6-6-6" />
+        </svg>
     );
 }

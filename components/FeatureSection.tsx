@@ -67,10 +67,10 @@ export default function FeatureSection() {
                     <Link
 
 
-                      href="/"
+                      href="/demo"
                       className="group flex w-fit items-center gap-3 rounded-lg bg-gradient-to-r from-green-400 to-green-600 px-6 py-3 text-sm font-medium text-white shadow-md transition-all hover:translate-x-1"
                     >
-                      <span>View Guide</span>
+                      <span>View Demo</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
