@@ -100,7 +100,7 @@ export default function Footer() {
               <li><Link href="/contact" className="text-gray-400 hover:text-gray-300">Contact Us</Link></li>
               <li><Link href="/team" className="text-gray-400 hover:text-gray-300">Our Team</Link></li>
               <li><Link href="/privacy-policy" className="text-gray-400 hover:text-gray-300">Privacy Policy</Link></li>
-              <li><Link href="/panaversity_guide.pdf" className="text-gray-400 hover:text-gray-300">How To Enroll</Link></li>
+              {/* <li><Link href="/panaversity_guide.pdf" className="text-gray-400 hover:text-gray-300">How To Enroll</Link></li> */}
               <li><Link href="/#faqs" className="text-gray-400 hover:text-gray-300">FAQs</Link></li>
               <li><Link href="/exam-policy" className="text-gray-400 hover:text-gray-300">Exam Policy</Link></li>
               <li><Link href="/examination_flow.pdf" className="text-gray-400 hover:text-gray-300">Examination Flow</Link></li>

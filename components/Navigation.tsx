@@ -55,7 +55,7 @@ export default function Navigation() {
           <Link className="flex items-center gap-2" aria-label="Home" href="/">
             <Image
               src="/LOGO.svg"
-              alt="Panaversity Logo"
+              alt="Classroom AI Logo"
               width={150}
               height={75}
               className="w-[120px] sm:w-[140px] md:w-[140px] lg:w-[150px] h-auto"
@@ -86,7 +86,7 @@ export default function Navigation() {
             >
               Pricing
             </Link>
-            <Link
+            {/* <Link
               target="_blank"
               aria-label="StudentBot"
               className="flex items-center gap-2"
@@ -107,7 +107,7 @@ export default function Navigation() {
                 </svg>
                 <span className="font-semibold text-[#12A86D]">StudentBot</span>
               </div>
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Right Side: Get Started Button and Mobile Menu */}
