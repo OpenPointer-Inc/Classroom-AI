@@ -16,6 +16,11 @@ export default function Home() {
     "description": "Classroom AI is an AI-powered Learning Management System that helps Higher School Students learn better. We offer O-levels, A-levels, Federal board and Lahore Board Courses Taught By AI agents here. We Provide personalized learning experience to students, so that they can perform better.",
     "operatingSystem": "Windows, macOS, Linux, Web Browser",
     "applicationCategory": "EdTech, Education",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "1"
+    },
     "offers": {
       "@type": "Offer",
       "price": "31.99",
