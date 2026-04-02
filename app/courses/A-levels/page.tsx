@@ -1,6 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: 'A-levels Preparation with Classroom AI || Join Now',
+}
 // --- DATA STRUCTURES ---
 const MODULES = [
     {
