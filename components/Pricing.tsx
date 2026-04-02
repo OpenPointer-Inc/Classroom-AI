@@ -41,9 +41,9 @@ export default function Pricing() {
             monthlyPrice: 0,
             annualPrice: 0,
             features: [
-                "5 AI Study Sessions / mo",
-                "Basic Note Summarization",
-                "Standard Response Time",
+                "3 Classes / day",
+                "10 AI Tool Uses / mo",
+                "Solve Lesson Quiz",
                 "Community Support"
             ],
             isPopular: false,

@@ -203,7 +203,10 @@ export default function Navigation() {
                   <Link href="/pricing" className="text-black hover:text-[#00D188] transition-colors" onClick={() => setIsSideMenuOpen(false)}>
                     Pricing
                   </Link>
-                  <Link
+                  <Link href="/courses" className="text-black hover:text-[#00D188] transition-colors" onClick={() => setIsSideMenuOpen(false)}>
+                    Courses
+                  </Link>
+                  {/* <Link
                     target="_blank"
                     className="flex items-center gap-2"
                     href="https://ai.panaversity.org"
@@ -224,7 +227,7 @@ export default function Navigation() {
                       </svg>
                       <span className="font-semibold text-[#12A86D]">StudentBot</span>
                     </div>
-                  </Link>
+                  </Link> */}
                 </nav>
               </div>
             </motion.div>

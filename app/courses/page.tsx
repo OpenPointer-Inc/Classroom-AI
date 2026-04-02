@@ -7,48 +7,48 @@ const COURSES = [
     code: "O-101",
     title: "O-levels || Cambridge International Education System",
     description: "Comprehensive preparation for O-levels exams with expert guidance of AI Agents.",
-    image: "https://i.postimg.cc/2yKPr20h/course-5.webp",
-    href: "/courses/O1-levels",
+    image: "https://i.postimg.cc/cLkH17WH/Untitled-design-(3).png",
+    href: "/courses/O-levels",
     isOpen: true,
   },
   {
     code: "A-101",
     title: "A-levels || Cambridge International Education System",
     description: "Comprehensive preparation for A-levels exams with expert guidance of AI Agents.",
-    image: "https://i.postimg.cc/XYLz3tSB/course-2.webp",
-    href: "/flagship-program/courses/",
+    image: "https://i.postimg.cc/cLkH17WH/Untitled-design-(3).png",
+    href: "/courses/A-levels",
     isOpen: true,
   },
   {
     code: "FBISE-101",
     title: "Federal Board of Intermediate and Secondary Education",
     description: "Comprehensive preparation for FBISE exams with expert guidance of AI Agents.",
-    image: "https://i.postimg.cc/KvyqTmmg/course-8.webp",
-    href: "/flagship-program/courses/AI-400",
+    image: "https://i.postimg.cc/HLmSxM9r/Untitled-design-(6).jpg",
+    href: "/courses",
     isOpen: false,
   },
   {
     code: "EN-101",
     title: "Entry Test preparation for Engineering and Medical Universities",
     description: "AI Assisted preparation for MDCAT || NUST || NET || ECAT || NTS exams",
-    image: "https://i.postimg.cc/9ffNf1C8/course-3.webp",
-    href: "/flagship-program/courses/AI-210",
+    image: "https://i.postimg.cc/76HwgfwR/Entry-Tests.jpg",
+    href: "/courses",
     isOpen: false,
   },
   {
     code: "AI-220",
-    title: "Agentic Web",
+    title: "Punjab Board of Intermediate and Secondary Education",
     description: "",
-    image: "https://i.postimg.cc/fT16Pqth/course-4.webp",
-    href: "/flagship-program/courses/AI-220",
+    image: "https://i.postimg.cc/R0GTZDFB/Untitled-design-(7).jpg",
+    href: "/courses",
     isOpen: false,
   },
   {
     code: "VU-101",
     title: "Virtual University of Pakistan",
     description: "Study for VU exams with expert guidance of AI Agents.",
-    image: "https://i.postimg.cc/bYnVdZfh/course-7.webp",
-    href: "/flagship-program/courses/AI-301",
+    image: "https://i.postimg.cc/vHLhKTsc/Untitled-design-(8).jpg",
+    href: "/courses",
     isOpen: false,
   }
 ];
@@ -96,7 +96,7 @@ export default function CoursesPage() {
                       <div className="text-base font-bold text-gray-800 md:text-xl">
                         Start your <span className="text-emerald-600">AI-Native Journey</span>
                       </div>
-                      <div className="text-sm text-gray-600">Read AI Native Software Development Book</div>
+                      <div className="text-sm text-gray-600">Read AI Native Get started Guide</div>
                     </div>
                     <div className="flex items-center rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-white shadow-lg">
                       <span className="text-xs font-semibold">Read for free</span>

@@ -22,6 +22,10 @@ export default function Home() {
       "priceCurrency": "USD",
       "availability": "https://schema.org/OnlineOnly",
     },
+    "countriesSupported": [
+      "Pakistan",
+      "Spain"
+    ],
     "featureList": [
       "AI-powered content Learning",
       "Interactive Classes by AI Tutors",
@@ -31,13 +35,13 @@ export default function Home() {
     "creator": {
       "@type": "Organization",
       // "@id": "https://Openpointer.org/",
-      "name": "Openpointer",
+      "name": "Classroom AI",
       // "url": "https://Openpointer.org",
       // "logo": "https://Openpointer.org/logo.png"
     },
     "sameAs": [
       "https://www.youtube.com/@openpointer",
-      "https://www.linkedin.com/company/openpointer",
+      "https://www.linkedin.com/company/classroom-ai",
     ]
 
   };
@@ -50,7 +54,9 @@ export default function Home() {
       <Top />
       <FeatureSection />
       <AnimatedDiv />
-      <Howitworks />
+      <div className="hidden md:block">
+        <Howitworks />
+      </div>
       <Faqs />
       <CalltoAction />
       <Footer />

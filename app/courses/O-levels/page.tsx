@@ -5,49 +5,48 @@ import Link from 'next/link';
 const MODULES = [
     {
         id: 1,
-        title: "Zero to WhatsApp in 60 Minutes",
-        description: "Everyone leaves with a working AI employee. Install OpenClaw, connect WhatsApp or Telegram, shape your employee's personality and role. Walk away with: OpenClaw running + messaging channel connected + employee shaped."
+        title: "Mathematics: AI Taught Maths",
+        description: "Master O-Level Maths with Classroom AI, your 24/7 adaptive tutor. From algebra to calculus, our AI-powered learning builds exam-ready confidence for Cambridge assessments."
     },
     {
         id: 2,
-        title: "Make It Do Real Work",
-        description: "Stop chatting, start delegating. Produce competitors.md, weekly-goals.md, and configure your morning briefing. Understand how your employee actually works — the architecture behind the magic. Walk away with: real artifacts + morning briefing configured."
+        title: "English: AI Taught English",
+        description: "Ace Cambridge English with AI-driven tutoring tailored for O-Level students. Get instant feedback on essays, comprehension, and grammar — and write with clarity every time."
     },
     {
         id: 3,
-        title: "Teach It New Tricks (Without Getting Hacked)",
-        description: "Your employee is only as good as its skills — and only as safe as your boundaries. Build one domain-specific custom skill, understand the lethal trifecta of prompt injection, and frame skills as sellable business assets. Walk away with: custom skill + safety model understood."
+        title: "Physics: AI Taught Physics",
+        description: "From forces to quantum mechanics, Classroom AI makes Cambridge Physics click. Adaptive lessons and step-by-step AI guidance help O-Level students conquer even the toughest topics."
     },
     {
         id: 4,
-        title: "Run Claude Code from Your Phone",
-        description: "The most powerful capability — delegate coding from WhatsApp. Set up ACP (Agent Communication Protocol), run at least one real task in a real project folder from your phone. Walk away with: ACP working + real coding task completed remotely."
+        title: "Chemistry: AI Taught Chemistry",
+        description: "Make reactions, equations, and organic chemistry finally make sense. Classroom AI personalises every Chemistry lesson for Cambridge O-Level with instant marking and smart revision."
     },
     {
         id: 5,
-        title: "Connect Everything — Google Workspace & Secrets",
-        description: "Your employee reads your email, manages your docs, handles credentials safely. Connect Google Workspace (Gmail, Calendar, Drive), verify secrets management. Walk away with: Google Workspace connected + secrets management verified."
+        title: "Computer Science: AI Taught Computer Science",
+        description: "Think like a programmer with AI-powered CS tutoring aligned to Cambridge O-Level. From algorithms to cybersecurity, Classroom AI makes technical concepts practical and exciting."
     },
     {
         id: 6,
-        title: "Your Employee Works While You Sleep",
-        description: "Scheduling, automation, compound workflows — the always-on employee. Build a heartbeat with personalized checklist, set up a working cron job with announce. Frame compound workflows as business operations. Walk away with: heartbeat checklist + working cron job."
+        title: "Biology: AI Taught Biology",
+        description: "Bring biology to life with Classroom AI's adaptive learning platform for Cambridge O-Level. Master cells, genetics, and ecosystems with personalised lessons and smarter revision."
     },
     {
         id: 7,
-        title: "NanoClaw — Beyond SMB",
-        description: "When your business outgrows shared-process architecture. Container isolation for regulated industries. Get NanoClaw running, apply the three-stage business maturity framework, design a Layer-3 architecture for your profession. Walk away with: NanoClaw running + maturity framework + Layer-3 design."
+        title: "Islamiyat: AI Taught Islamiyat",
+        description: "Study Cambridge O-Level Islamiyat with culturally sensitive, curriculum-aligned AI tutoring. Classroom AI helps students engage deeply with Quranic studies, Hadith, and Islamic history."
     }
 ];
 
 const OUTCOMES = [
-    "Set up a fully working AI employee with OpenClaw connected to WhatsApp or Telegram",
-    "Delegate real work — competitive analysis, goal-setting, morning briefings — and keep the artifacts",
-    "Build domain-specific custom skills and understand the safety model that prevents prompt injection",
-    "Orchestrate Claude Code from your phone to delegate coding tasks to real project folders",
-    "Connect Google Workspace (Gmail, Calendar, Drive) with proper secrets management",
-    "Design compound workflows with scheduling, cron jobs, and always-on automation",
-    "Deploy NanoClaw with container isolation and apply the three-stage business maturity framework"
+    "Build exam-ready confidence for Cambridge O-Level and A-Level assessments with AI-guided practice",
+    "Master core subjects — Maths, English, Physics, Chemistry, Biology, Computer Science, and Islamiyat — through structured AI learning",
+    "Receive instant, detailed feedback on answers, essays, and problem sets powered by Classroom AI",
+    "Track your progress with smart performance insights that identify weak areas and prioritise revision",
+    "Learn at your own pace with curriculum-aligned lessons designed for the Cambridge syllabus",
+    "Graduate from rote memorisation to deep understanding with Classroom AI's adaptive teaching methods"
 ];
 
 // --- COMPONENT ---
@@ -74,7 +73,7 @@ export default function CourseDetailPage() {
                                         <Link href="/flagship-program/courses" className="hover:underline">Courses</Link>
                                         <ChevronRight />
                                     </li>
-                                    <li className="opacity-80">Your First AI Employee</li>
+                                    <li className="opacity-80">O-levels</li>
                                 </ol>
                             </nav>
 
@@ -82,20 +81,20 @@ export default function CourseDetailPage() {
                                 <div className="space-y-6 pr-0 sm:col-span-3 md:col-span-3 md:pr-4 lg:col-span-2">
                                     <div className="space-y-4">
                                         <p className="text-md inline-block rounded-full bg-emerald-500/70 px-4 py-1 font-semibold text-white backdrop-blur-3xl">
-                                            AI-50
+                                            Cambridge International Education
                                         </p>
-                                        <h1 className="text-3xl font-bold xs:text-4xl lg:text-5xl">
-                                            Your First AI Employee: OpenClaw for Business Professionals
+                                        <h1 className="text-3xl mt-2 font-bold xs:text-4xl lg:text-5xl">
+                                            AI Taught O-levels: Ace your Studies with AI Today.
                                         </h1>
                                         <p className="text-sm font-medium leading-relaxed text-gray-100 sm:text-base">
-                                            A 7-session hands-on series covering AI employees from first install to deployment.
-                                            No prerequisites — understand what you're building and why it works.
+                                            Your A-levels Journey is Personalized and Gamified, so treat it as a Game.
+                                            Becareful because now, it's very Addictive.
                                         </p>
                                     </div>
 
                                     <div className="flex items-center space-x-2">
                                         <CalendarIcon />
-                                        <span>Duration: 3 months</span>
+                                        <span>Duration: 12 months</span>
                                     </div>
 
                                     <button className="group mt-4 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/20">
@@ -107,12 +106,6 @@ export default function CourseDetailPage() {
                                 {/* Enrollment Card */}
                                 <div className="w-full sm:col-span-2 md:col-span-2 lg:col-span-1">
                                     <div className="rounded-xl border border-white/10 bg-white p-4 text-zinc-900 shadow-2xl">
-                                        <p className="mb-2 flex items-center gap-1 text-xs font-semibold text-emerald-600">
-                                            Available Sections: <InfoIcon />
-                                        </p>
-                                        <div className="rounded-lg bg-gray-100 p-1">
-                                            <button className="w-full rounded-md bg-white py-1.5 text-sm font-medium shadow-sm">OCNC-W1</button>
-                                        </div>
 
                                         <div className="mt-4 space-y-3">
                                             <p className="text-sm font-semibold text-emerald-600">Section Classes Schedule:</p>
@@ -125,18 +118,15 @@ export default function CourseDetailPage() {
                                                     ))}
                                                 </div>
                                                 <div className="p-3 space-y-2 text-xs">
-                                                    <div className="flex items-center gap-2"><ClockIcon /> <span>Wed 22:00 (GMT+5) | 1.0 hour</span></div>
-                                                    <div className="flex items-center gap-2"><UserIcon /> <span>Zia Khan | Urdu</span></div>
+                                                    <div className="flex items-center gap-2"><ClockIcon /> <span>Anytime 24/7 (GMT+5) | 1.0 hour</span></div>
+                                                    <div className="flex items-center gap-2"><UserIcon /> <span>AI Tutor | Urdu | English | Arabic | Spainish | and more Comming Soon</span></div>
                                                     <div className="flex items-center justify-between border-t pt-2 mt-2">
                                                         <span className="text-gray-500">Seats Left: <span className="font-bold text-red-600">468</span></span>
                                                         <span className="text-gray-500">Closes: <span className="font-bold text-red-600">Apr 07</span></span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="flex items-center justify-between pt-2">
-                                                <span className="font-medium">Price:</span>
-                                                <span className="text-2xl font-bold text-emerald-600">Free</span>
-                                            </div>
+
                                             <button className="flex w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
                                                 Enroll Now <ChevronRight className="ml-2 h-5 w-5" />
                                             </button>
@@ -154,7 +144,7 @@ export default function CourseDetailPage() {
                 <div className="mb-12 space-y-4">
                     <h2 className="text-3xl font-semibold text-zinc-900 md:text-4xl">Details</h2>
                     <p className="text-lg leading-relaxed text-zinc-700">
-                        No existing course teaches OpenClaw AND NanoClaw together from an architecture perspective.
+                        No existing course teaches O-levels Courses with AI. AI is empowering Education and makes learning fun and addictive
                         Our angle: understand what you're building and why it works. Every session produces a tangible walk-away artifact.
                     </p>
                 </div>
@@ -162,7 +152,7 @@ export default function CourseDetailPage() {
                 {/* Modules Grid */}
                 <div className="rounded-2xl bg-slate-50 p-6 sm:p-10">
                     <h2 className="mb-6 flex items-center gap-2 text-2xl font-bold text-zinc-900">
-                        <LayersIcon /> Key Learning Modules
+                        <LayersIcon /> Subjects We Offer
                     </h2>
                     <div className="grid gap-6">
                         {MODULES.map((mod) => (
@@ -246,11 +236,11 @@ const LayersIcon = () => (
 );
 
 const ClockIcon = () => (
-    <svg className="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="8" cy="8" r="7" /><path d="M8 3.5V8h4.5" /></svg>
+    <svg className="h-6 w-6 mt-2 -mr-1.5 text-[#8A8A8A] stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="8" cy="8" r="7" /><path d="M8 3.5V8h4.5" /></svg>
 );
 
 const UserIcon = () => (
-    <svg className="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" /></svg>
+    <svg className="h-6 w-6 text-[#8A8A8A] stroke-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" /></svg>
 );
 
 const CheckIcon = ({ className }: { className?: string }) => (

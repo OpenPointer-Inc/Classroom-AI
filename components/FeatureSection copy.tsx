@@ -32,7 +32,8 @@ export default function FeatureSection() {
                   loop
                   muted
                   playsInline
-                  preload="auto"
+                  preload="none"
+                  aria-label="Classroom AI Platform Demonstration Video"
                 >
                   <source src="/Laptop_frame_showing_demo.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
