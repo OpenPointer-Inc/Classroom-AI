@@ -39,9 +39,9 @@ export default function Home() {
     "keywords": "AI powered Education,AI powered Learning, Classroom AI, personalized learning, AI Tutors, Openpointer",
     "creator": {
       "@type": "Organization",
-      // "@id": "https://Openpointer.org/",
+      "@id": "https://classroomai.site",
       "name": "Classroom AI",
-      // "url": "https://Openpointer.org",
+      "url": "https://classroomai.site",
       // "logo": "https://Openpointer.org/logo.png"
     },
     "sameAs": [
