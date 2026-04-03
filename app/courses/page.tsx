@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import React from "react";
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'Courses - Classroom AI',
+  description: 'Courses offered by Classroom AI',
+}
 // 1. Extracted Data for maintainability
 const COURSES = [
   {
