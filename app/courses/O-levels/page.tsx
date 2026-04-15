@@ -125,7 +125,7 @@ export default function CourseDetailPage() {
                                                     <div className="flex items-center gap-2"><ClockIcon /> <span>Anytime 24/7 (GMT+5) | 1.0 hour</span></div>
                                                     <div className="flex items-center gap-2"><UserIcon /> <span>AI Tutor | Urdu | English | Arabic | Spainish | and more Comming Soon</span></div>
                                                     <div className="flex items-center justify-between border-t pt-2 mt-2">
-                                                        <span className="text-gray-500">Seats Left: <span className="font-bold text-red-600">468</span></span>
+                                                        <span className="text-gray-500">Enrolled: <span className="font-bold text-red-600">00</span></span>
                                                         <span className="text-gray-500">Closes: <span className="font-bold text-red-600">Apr 07</span></span>
                                                     </div>
                                                 </div>

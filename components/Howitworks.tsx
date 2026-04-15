@@ -191,7 +191,7 @@ export default function Howitworks() {
                         <h1 className="text-white text-6xl md:text-8xl font-black mb-8 tracking-tighter text-center">
                             Make it yours.
                         </h1>
-                        <button className="pointer-events-auto px-10 py-4 bg-white text-black text-xl font-bold rounded-full hover:scale-105 transition-transform duration-300">
+                        <button className="pointer-events-auto cursor-pointer px-10 py-4 bg-white text-black text-xl font-bold rounded-full hover:scale-105 transition-transform duration-300">
                             Get started
                         </button>
                     </motion.div>

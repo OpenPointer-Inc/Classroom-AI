@@ -37,8 +37,8 @@ export default function Contact() {
                 >
                     <h2 className="text-green-400 text-lg font-mono mb-4 tracking-widest uppercase">Get in touch</h2>
                     <h1 className="text-white text-5xl md:text-7xl font-black tracking-tighter leading-tight mb-6">
-                        Let's build<br />something<br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">extraordinary.</span>
+                        Let's connect<br />breaking<br className="hidden md:block" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">the barriers.</span>
                     </h1>
                     <p className="text-white/70 text-lg max-w-md mb-12">
                         Have a question or want to work together? We'd love to hear from you. Drop us a message and we'll reply as soon as possible.

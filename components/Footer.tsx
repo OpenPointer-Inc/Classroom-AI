@@ -67,7 +67,7 @@ export default function Footer() {
                 </a>
 
                 {/* LinkedIn */}
-                <a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/company/openpointer/">
+                <a target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/company/classroom-ai/">
                   <svg
                     fill="currentColor"
                     viewBox="0 0 448 512"
@@ -137,7 +137,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="mt-14 flex h-16 items-center justify-center bg-[#041F16] text-center text-sm text-gray-400">
-        © Copyright {new Date().getFullYear()} Openpointer, Inc.
+        © Copyright {new Date().getFullYear()} Classroom AI, Inc.
       </div>
     </footer>
   );

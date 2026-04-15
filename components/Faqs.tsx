@@ -58,7 +58,7 @@ const Faqs = () => {
                                 >
                                     <button
                                         onClick={() => toggleAccordion(index)}
-                                        className="w-full py-6 flex items-start justify-between text-left group transition-all"
+                                        className="w-full py-6 cursor-pointer flex items-start justify-between text-left group transition-all"
                                     >
                                         <span className={`text-[18px] font-bold text-[#0F172A] pr-8 group-hover:text-[#1CD98E] transition-colors leading-[1.4] font-poppins`}>
                                             {faq.question}

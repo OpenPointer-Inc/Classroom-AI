@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 
@@ -55,13 +56,18 @@ export default function AnimatedDiv() {
                         Collaborating with <br />
                         <span className="text-gray-900">5+ Academic Programs</span>
                     </h1>
-                    <motion.button
+                    <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="mt-6 md:mt-10 px-6 py-3 md:px-8 md:py-4 cursor-pointer bg-[#1CD98E] text-white rounded-full text-base md:text-lg font-semibold shadow-lg hover:bg-[#00f090] transition-colors"
+                        className="mt-6 md:mt-10"
                     >
-                        Explore all Programs
-                    </motion.button>
+                        <Link
+                            href="/courses"
+                            className="inline-block px-6 py-3 md:px-8 md:py-4 cursor-pointer bg-[#1CD98E] text-white rounded-full text-base md:text-lg font-semibold shadow-lg hover:bg-[#00f090] transition-colors"
+                        >
+                            Explore all Programs
+                        </Link>
+                    </motion.div>
                 </motion.div>
 
                 {/* Scattered Images */}

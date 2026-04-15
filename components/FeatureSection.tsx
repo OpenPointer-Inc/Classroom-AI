@@ -1,7 +1,41 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+
+const tabData = [
+  {
+    step: "STEP 1",
+    title: "INTERACTIVE",
+    description: "Our Classroom is fully interactive and engaging. You can ask questions, get personalized Answer and learn with ease.",
+    linkText: "View Demo",
+    linkHref: "/demo",
+  },
+  {
+    step: "STEP 2",
+    title: "GAMIFIED",
+    description: "Research have shown that reward based learning imporves student engagement and boosts learning rate. So we made learning fun and rewarding.",
+    linkText: "Try a Quiz",
+    linkHref: "/demo",
+  },
+  {
+    step: "STEP 3",
+    title: "PERSONALIZED",
+    description: "Experience the teachers who knows you, your preferences, your strengths, and your weaknesses. ",
+    linkText: "Learn More",
+    linkHref: "/demo",
+  },
+  {
+    step: "STEP 4",
+    title: "EXPERT MENTORS",
+    description: "Connect with world-class educators and subject matter experts who guide your journey and provide valuable insights.",
+    linkText: "Meet Mentors",
+    linkHref: "/team",
+  },
+];
 
 export default function FeatureSection() {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <div className="relative overflow-hidden py-16 text-gray-800 lg:mt-10">
       <div className="bg-linear-to-bl from-transparent to-white mx-auto px-4 sm:px-6 lg:max-w-[990px] lg:px-8 xl:max-w-[1200px]">
@@ -11,15 +45,14 @@ export default function FeatureSection() {
             <h1 className="gradient-border w-fit border-b text-sm font-semibold uppercase tracking-wide text-textPrimary sm:text-md md:text-lg">
               Classroom AI
             </h1>
-            <h3 className="font-poppins mb-4 mt-2 text-center text-2xl font-semibold tracking-tight text-primary xs:text-3xl sm:text-4xl md:text-5xl">
+            <h2 className="font-poppins mb-4 mt-2 text-center text-2xl font-semibold tracking-tight text-primary xs:text-3xl sm:text-4xl md:text-5xl">
               A Major Evolution in Education{" "}
               <span className="text-[#1CD98E]">COMING SOON!</span>
-            </h3>
-            <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-700 md:text-xl">
+            </h2>
+            <h3 className="mx-auto max-w-3xl text-base leading-relaxed text-gray-700 md:text-xl">
               Our unique blend of Expert Mentors, Personalized Learning Agent,
-              and insightful Assessments doesn’t just teach – it transforms your
-              skills and potential.
-            </p>
+              and insightful Assessments are Gamified.
+            </h3>
           </div>
 
           {/* Main Content Grid */}
@@ -44,33 +77,38 @@ export default function FeatureSection() {
             {/* Right Content Column */}
             <div className="mx-auto w-full max-w-2xl space-y-6 lg:col-span-3 lg:max-w-none">
               <div className="mx-auto mb-4 mt-8 flex justify-center space-x-2">
-                <button className="h-2 w-12 rounded-full bg-gradient-to-r from-green-400 to-green-600"></button>
-                <button className="h-2 w-12 rounded-full bg-gray-300"></button>
-                <button className="h-2 w-12 rounded-full bg-gray-300"></button>
-                <button className="h-2 w-12 rounded-full bg-gray-300"></button>
+                {tabData.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    aria-label={`Go to step ${index + 1}`}
+                    className={`h-2 w-12 rounded-full transition-colors cursor-pointer ${activeTab === index
+                      ? "bg-gradient-to-r from-green-400 to-green-600"
+                      : "bg-gray-300 hover:bg-gray-400"
+                      }`}
+                  ></button>
+                ))}
               </div>
 
               <div className="flex h-[425px] bg-white w-full flex-col rounded-2xl border border-indigo-100 bg-opacity-80 p-8 shadow-2xl backdrop-blur-sm">
                 <div className="flex h-full flex-col">
-                  <div className="inline-block rounded-full bg-gradient-to-r from-[#e2e5e9] to-[#bbc6f8] px-4 py-1 text-xs font-medium text-black shadow-sm mb-4">
-                    STEP 1
+                  <div className="inline-block w-fit rounded-full bg-gradient-to-r from-[#e2e5e9] to-[#bbc6f8] px-4 py-1 text-xs font-medium text-black shadow-sm mb-4">
+                    {tabData[activeTab].step}
                   </div>
-                  <h2 className="font-poppins mb-4 text-lg font-bold text-textPrimary">
-                    INTERACTIVE
-                  </h2>
+                  <h4 className="font-poppins mb-4 text-lg font-bold text-textPrimary uppercase">
+                    {tabData[activeTab].title}
+                  </h4>
                   <div className="grow overflow-y-auto pr-2">
-                    <p className="text-justify text-sm leading-relaxed text-textSecondary">
-                      Our Classroom is fully interactive and engaging. You can ask questions, get personalized Answer and learn with ease.
-                    </p>
+                    <h5 className="text-justify text-sm leading-relaxed text-textSecondary">
+                      {tabData[activeTab].description}
+                    </h5>
                   </div>
                   <div className="mt-2 border-t-2 border-gray-300 pt-4">
                     <Link
-
-
-                      href="/demo"
+                      href={tabData[activeTab].linkHref}
                       className="group flex w-fit items-center gap-3 rounded-lg bg-gradient-to-r from-green-400 to-green-600 px-6 py-3 text-sm font-medium text-white shadow-md transition-all hover:translate-x-1"
                     >
-                      <span>View Demo</span>
+                      <span>{tabData[activeTab].linkText}</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

@@ -32,8 +32,8 @@ export default function Top() {
             </h1>
 
             <p className={`${inter.className} mt-6 text-[0.9rem] leading-8 text-textSecondary md:text-[1.1rem]`}>
-              No Static Videos, No Pre-crafted Assessments, No Recorded Lectures{" "}
-              <span className="gradient-border2">Everything is live and interactive.</span> Get started Now!
+              Classroom AI is an AI-powered Learning Application for K-12s, such as O-levels | A-levels.{" "}
+              <span className="gradient-border2"> We make Learning Personalized and Addictive.</span>
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-x-6">
