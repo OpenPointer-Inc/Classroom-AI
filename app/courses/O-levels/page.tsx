@@ -112,11 +112,11 @@ export default function CourseDetailPage() {
                                     <div className="rounded-xl border border-white/10 bg-white p-4 text-zinc-900 shadow-2xl">
 
                                         <div className="mt-4 space-y-3">
-                                            <p className="text-sm font-semibold text-emerald-600">Section Classes Schedule:</p>
+                                            <p className="text-sm font-semibold text-emerald-600">Section Enrolments:</p>
                                             <div className="rounded-lg border border-gray-200 bg-gray-50 overflow-hidden">
                                                 <div className="flex justify-between bg-gray-200 px-2 py-1">
-                                                    {['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'].map((day) => (
-                                                        <span key={day} className={`px-2 py-1 text-xs ${day === 'We' ? 'bg-emerald-500 text-white rounded font-bold' : 'text-gray-400'}`}>
+                                                    {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'].map((day) => (
+                                                        <span key={day} className={`px-2 py-1 text-xs ${day === 'Apr' ? 'bg-emerald-500 text-white rounded font-bold' : 'text-gray-400'}`}>
                                                             {day}
                                                         </span>
                                                     ))}
@@ -126,12 +126,12 @@ export default function CourseDetailPage() {
                                                     <div className="flex items-center gap-2"><UserIcon /> <span>AI Tutor | Urdu | English | Arabic | Spainish | and more Comming Soon</span></div>
                                                     <div className="flex items-center justify-between border-t pt-2 mt-2">
                                                         <span className="text-gray-500">Enrolled: <span className="font-bold text-red-600">00</span></span>
-                                                        <span className="text-gray-500">Closes: <span className="font-bold text-red-600">Apr 07</span></span>
+                                                        <span className="text-gray-500">Completed: <span className="font-bold text-red-600">Apr 07</span></span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <button className="flex w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
+                                            <button className="flex cursor-pointer w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
                                                 Enroll Now <ChevronRight className="ml-2 h-5 w-5" />
                                             </button>
                                         </div>

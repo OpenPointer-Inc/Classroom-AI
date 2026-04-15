@@ -95,13 +95,23 @@ export default function FeatureSection() {
                   <div className="inline-block w-fit rounded-full bg-gradient-to-r from-[#e2e5e9] to-[#bbc6f8] px-4 py-1 text-xs font-medium text-black shadow-sm mb-4">
                     {tabData[activeTab].step}
                   </div>
-                  <h4 className="font-poppins mb-4 text-lg font-bold text-textPrimary uppercase">
-                    {tabData[activeTab].title}
-                  </h4>
-                  <div className="grow overflow-y-auto pr-2">
-                    <h5 className="text-justify text-sm leading-relaxed text-textSecondary">
-                      {tabData[activeTab].description}
-                    </h5>
+                  <style>
+                    {`
+                      @keyframes slideUpFade {
+                        3% { opacity: 0.3; transform: translateY(10px); }
+                        100% { opacity: 1; transform: translateY(0); }
+                      }
+                    `}
+                  </style>
+                  <div key={activeTab} style={{ animation: "slideUpFade 0.4s ease-out forwards" }} className="flex flex-col grow">
+                    <h4 className="font-poppins mb-4 text-lg font-bold text-textPrimary uppercase">
+                      {tabData[activeTab].title}
+                    </h4>
+                    <div className="grow overflow-y-auto pr-2">
+                      <h5 className="text-justify text-sm leading-relaxed text-textSecondary">
+                        {tabData[activeTab].description}
+                      </h5>
+                    </div>
                   </div>
                   <div className="mt-2 border-t-2 border-gray-300 pt-4">
                     <Link

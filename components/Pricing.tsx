@@ -41,8 +41,8 @@ export default function Pricing() {
             monthlyPrice: 0,
             annualPrice: 0,
             features: [
-                "3 Classes / day",
-                "10 AI Tool Uses / mo",
+                "3 AI Study Sessions / day",
+                "50 AI Tool Uses / mo",
                 "Solve Lesson Quiz",
                 "Community Support"
             ],
@@ -54,23 +54,25 @@ export default function Pricing() {
             monthlyPrice: 12,
             annualPrice: 9,
             features: [
-                "Unlimited AI Study Sessions",
-                "Advanced Document Chat",
-                "Custom Study Guides",
-                "Priority Response Time"
+                "70 AI Study Sessions / mo",
+                "Unlimited AI Tool Usage",
+                "24/7 Expert Support",
+                // "Weekly Progress Reports",
+                "Early Access to new Features",
+                "Community Access",
             ],
             isPopular: true,
         },
         {
-            name: "Researcher",
-            description: "Uncapped capabilities for university scholars",
-            monthlyPrice: 29,
-            annualPrice: 22,
+            name: "Schools",
+            description: "Contact Us for pricing",
+            monthlyPrice: "--",
+            annualPrice: "--",
             features: [
                 "Everything in Scholar",
-                "Voice & Audio Analysis",
-                "Research Paper Co-Pilot",
-                "24/7 Priority Support"
+                "Bulk Distribution",
+                "Compititive Discounted Price",
+                "24/7 Priority Support",
             ],
             isPopular: false,
         }
@@ -162,23 +164,33 @@ export default function Pricing() {
                             <p className="text-gray-500 text-sm h-10 mb-8 leading-relaxed">{plan.description}</p>
 
                             <div className="mb-10">
-                                <div className="flex items-end gap-2">
-                                    <span className="text-6xl font-black tracking-tighter text-gray-900">
-                                        <span className="text-3xl font-medium text-gray-400 mr-1">$</span>
-                                        {isAnnual ? plan.annualPrice : plan.monthlyPrice}
-                                    </span>
-                                    <span className="text-gray-400 mb-2 font-mono text-sm">/mo</span>
-                                </div>
-                                <div className="h-6 mt-2">
-                                    {isAnnual && plan.monthlyPrice > 0 && (
-                                        <motion.span
-                                            initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                                            className="text-xs font-mono text-emerald-600"
-                                        >
-                                            Billed ${plan.annualPrice * 12} yearly
-                                        </motion.span>
-                                    )}
-                                </div>
+                                {plan.name === 'Schools' ? (
+                                    <div className="flex items-end gap-2 h-[4.5rem]">
+                                        <span className="text-4xl font-black tracking-tighter text-gray-900">
+                                            Contact Us
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <>
+                                        <div className="flex items-end gap-2">
+                                            <span className="text-6xl font-black tracking-tighter text-gray-900">
+                                                <span className="text-3xl font-medium text-gray-400 mr-1">$</span>
+                                                {isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                                            </span>
+                                            <span className="text-gray-400 mb-2 font-mono text-sm">/mo</span>
+                                        </div>
+                                        <div className="h-6 mt-2">
+                                            {isAnnual && typeof plan.monthlyPrice === 'number' && plan.monthlyPrice > 0 && (
+                                                <motion.span
+                                                    initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                                                    className="text-xs font-mono text-emerald-600"
+                                                >
+                                                    Billed ${(plan.annualPrice as number) * 12} yearly
+                                                </motion.span>
+                                            )}
+                                        </div>
+                                    </>
+                                )}
                             </div>
 
                             <div className="h-px w-full bg-gradient-to-r from-gray-200 to-transparent mb-10" />
@@ -196,15 +208,16 @@ export default function Pricing() {
                                 ))}
                             </ul>
 
-                            <motion.button
+                            <motion.a
+                                href={plan.name === 'Schools' ? '/contact' : '#'}
                                 whileTap={{ scale: 0.98 }}
-                                className={`w-full py-4 rounded-xl font-bold tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${plan.isPopular
+                                className={`w-full cursor-pointer py-4 rounded-xl font-bold tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${plan.isPopular
                                     ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-300'
                                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200'
                                     }`}>
-                                Get Started
+                                {plan.name === 'Schools' ? 'Contact Us' : 'Get Started'}
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${plan.isPopular ? 'text-white' : 'text-gray-400'} transform group-hover:translate-x-1 transition-transform`}><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-                            </motion.button>
+                            </motion.a>
                         </motion.div>
                     ))}
                 </div>

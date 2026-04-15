@@ -6,7 +6,7 @@ const dummyFounder = {
     role: "Founder & CEO",
     description: "Pioneering the intersection of artificial intelligence and pedagogy.\nFormer AI researcher at DeepMind and Stanford engineering alumni.\nCommitted to ethical, personalized AI deployment in classrooms worldwide.",
     linkedin: "https://www.linkedin.com/in/faseehahmd/",
-    image: ""
+    image: "/Faseeh Ahmad.jpeg"
 };
 
 const dummyTeam = [
@@ -96,6 +96,8 @@ export default function Team() {
                             <div className="mt-12">
                                 <a
                                     href={dummyFounder.linkedin}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="group/btn inline-flex items-center gap-3 bg-transparent text-[#050316] border border-[#050316] px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-[#1CD98E] hover:border-[#1CD98E] hover:text-white transition-all w-full sm:w-auto justify-center"
                                 >
                                     <LinkedInIcon />
@@ -118,7 +120,7 @@ export default function Team() {
                             <p className="text-[#1CD98E] font-bold tracking-wider uppercase text-xs mb-3">
                                 {member.role}
                             </p>
-                            <h4 className="text-2xl md:text-3xl font-black tracking-tight mb-6 group-hover:underline decoration-[#1CD98E] decoration-4 underline-offset-4 leading-tight">
+                            <h4 className="cursor-pointer text-2xl md:text-3xl font-black tracking-tight mb-6 group-hover:underline decoration-[#1CD98E] decoration-4 underline-offset-4 leading-tight">
                                 {member.name}
                             </h4>
                             <div className="text-sm text-gray-600 font-light flex-grow space-y-2 mb-8 whitespace-pre-line leading-relaxed">
@@ -126,6 +128,8 @@ export default function Team() {
                             </div>
                             <a
                                 href={member.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="mt-auto inline-flex w-fit items-center gap-2 text-[#050316] font-semibold text-sm hover:text-[#1CD98E] transition-colors pb-1 border-b border-[#050316] hover:border-[#1CD98E]"
                             >
                                 <LinkedInIcon />
