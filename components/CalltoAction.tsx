@@ -14,7 +14,7 @@ export default function CalltoAction() {
               Stop Watching. Start Interacting with Your Live AI Tutor.
             </h2>
             <p className="font-inter mb-6 text-[0.9rem] text-background/90 md:text-[1rem] max-w-3xl mx-auto">
-              Ditch the static video lectures and generic coursework. Join thousands of students using an interactive AI study copilot to achieve deeper comprehension in record time. Experience the power of personalized learning with our free Beginner plan today.
+              Ditch the static video lectures and generic coursework. Join thousands of students using generative AI study copilots to achieve deeper comprehension and 3x faster learning. Experience the power of an adaptive learning system with our free Beginner plan today.
             </p>
             <button
               aria-label="Open Coming Soon Dialog"

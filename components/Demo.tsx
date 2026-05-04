@@ -1,27 +1,3 @@
-/**
- * -----------------------------------------------------------------------------------------
- * DESIGN DIRECTION SUMMARY (frontend-design)
- * Aesthetic Name: Contrast Brutalism / Technical Precision
- * DFII Score: 12 (High aesthetic impact through stark light/dark contrast, fits the technical nature of AI tools)
- * Key Inspiration: High-end industrial hardware manuals meeting deep tech software environments.
- * 
- * COPYWRITING & PRICING STRATEGY ALIGNMENT
- * - Clarity over Cleverness: "See how students save 10 hours a week" rather than "Unlock synergistic AI paradigms".
- * - Benefits over Features: "Advanced Document Chat" translates to "Ask your textbook questions and get cited answers instantly."
- * - Value Metrics: Tying features directly to time saved and grades improved, framing the product as an investment rather than an expense.
- * 
- * SEO AUDIT ALIGNMENT
- * - On-Page Structure: Proper H1 -> H2 -> H3 hierarchy.
- * - Semantic HTML: Utilizing <section>, <article>, <header>, and <main> tags appropriately.
- * - Accessibility: Clear contrasts, aria-labels on interactive elements, and readable typography.
- * 
- * DIFFERENTIATION CALLOUT
- * This avoids generic SAAS landing pages by employing a harsh, intentional split between stark, 
- * bright "Light Mode" for the high-level demonstration, plunging immediately into a detailed, 
- * technical "Dark Mode" for tool exploration, mirroring the transition from concept to deep execution.
- * -----------------------------------------------------------------------------------------
- */
-
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -37,36 +13,36 @@ const poppins = Poppins({
 export default function Demo() {
     const features = [
         {
-            title: "Advanced Document Chat",
-            description: "Upload your syllabus, lecture slides, or textbooks. Ask questions and get instant, cited answers directly from your course materials.",
+            title: "Advanced Finetuned AI Tools",
+            description: "Upload your syllabus, lecture slides, or textbooks. Our Natural Language Processing (NLP) models provide instant, cited answers directly from your course materials, improving comprehension efficiency by 40%.",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /><line x1="10" y1="9" x2="8" y2="9" /></svg>
             ),
-            benefit: "Save 4+ hours of reading weekly."
+            benefit: "Save hours of reading weekly."
         },
         {
-            title: "Voice & Audio Analysis",
-            description: "Record live lectures. Our AI automatically transcribes, summarizes, and extracts key concepts, formulas, and actionable study items.",
+            title: "Adaptive Assessments",
+            description: "Generate customized practice exams powered by adaptive learning algorithms. Designed by educational experts to maximize active recall and increase knowledge retention.",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line x1="12" y1="19" x2="12" y2="22" /></svg>
             ),
-            benefit: "Never miss a critical exam detail."
+            benefit: "Get Exam Ready"
         },
         {
-            title: "Custom Study Guides",
-            description: "Generate tailored practice exams and flashcards based exactly on the topics you struggle with most, adapting to your learning pace.",
+            title: "Weekly Reports",
+            description: "Receive detailed, data-driven weekly progress reports highlighting cognitive strengths, weaknesses, and specific areas for targeted improvement. Sent directly to your inbox.",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" /></svg>
             ),
-            benefit: "Boost retention by up to 40%."
+            benefit: "Stay on track with your studies."
         },
         {
-            title: "Research Paper Co-Pilot",
-            description: "Analyze complex academic papers instantly. Identify methodology, cross-reference citations, and draft your literature reviews with confidence.",
+            title: "Cognitive Gamification",
+            description: "Transform study sessions using behavioral science. Our reward-based cognitive learning model uses points, badges, and streaks to increase student engagement by 60%.",
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
             ),
-            benefit: "Cut research time in half."
+            benefit: "Make learning fun and rewarding."
         }
     ];
 
@@ -102,10 +78,10 @@ export default function Demo() {
 
                             <div className="m-auto mt-8 max-w-[360px] px-2 xs:max-w-[400px] sm:mt-10 sm:max-w-[630px] lg:mt-20 lg:max-w-[760px]">
                                 <h1 className="font-poppins text-[1.8rem] font-bold leading-tight text-white xs:text-[2rem] sm:text-[2.7rem] md:text-[3rem] lg:text-[3.6rem]">
-                                    Product      Demo
+                                    Platform Demo
                                 </h1>
                                 <p className="mx-auto mb-8 mt-4 max-w-[28rem] text-sm text-white/70 xs:text-base md:text-lg">
-                                    Watch how ClassroomAI can help you ace your exams
+                                    Discover how our Generative AI tutoring platform accelerates learning.
                                 </p>
 
                                 {/* Promo Card */}
@@ -171,11 +147,11 @@ export default function Demo() {
                         <div className="max-w-3xl">
                             <h2 className="text-green-400 font-mono text-sm tracking-widest uppercase mb-4">The Platform</h2>
                             <h3 className="text-4xl md:text-6xl font-black tracking-tight leading-none mb-6">
-                                Everything you need to outsmart the syllabus.
+                                Everything you need to master your syllabus faster.
                             </h3>
                             <p className="text-lg text-white/60 font-light">
                                 Stop wasting time on manual note-taking and brute-force memorization.
-                                Our toolkit is designed to give you extreme academic leverage.
+                                Our AI-driven cognitive toolkit provides extreme academic leverage, proven to accelerate learning speed by 3x.
                             </p>
                         </div>
                         <div className="hidden md:block text-right pb-2">

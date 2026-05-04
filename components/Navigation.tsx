@@ -230,6 +230,23 @@ export default function Navigation() {
                   </Link> */}
                 </nav>
               </div>
+              <div className="mt-auto pt-6 flex w-full justify-start">
+                <button
+                  aria-label="Open Coming Soon Dialog"
+                  onClick={() => {
+                    setIsSideMenuOpen(false);
+                    setIsModalOpen(true);
+                  }}
+                  className="group relative inline-flex items-center justify-start overflow-hidden rounded-full px-6 py-3 font-bold cursor-pointer"
+                >
+                  <span className="absolute left-0 top-0 h-32 w-32 -translate-y-2 translate-x-12 rotate-45 bg-[#1CD98E] opacity-[3%]"></span>
+                  <span className="absolute left-0 top-0 -mt-1 h-48 w-48 -translate-x-56 -translate-y-24 rotate-45 bg-[#1CD98E] opacity-100 transition-all duration-500 ease-in-out group-hover:-translate-x-8"></span>
+                  <span className="font-poppins relative w-full text-left text-base font-semibold text-black transition-colors duration-200 ease-in-out group-hover:text-white">
+                    Get Started
+                  </span>
+                  <span className="absolute inset-0 rounded-full border-2 border-[#1CD98E]"></span>
+                </button>
+              </div>
             </motion.div>
           </>
         )}

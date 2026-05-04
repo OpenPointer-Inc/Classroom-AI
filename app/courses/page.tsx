@@ -3,55 +3,67 @@ import React from "react";
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Courses - Classroom AI',
-  description: 'Courses offered by Classroom AI',
+  title: 'AI-Native Academic Courses | Classroom AI',
+  description: 'Accelerate your academic performance with Classroom AI. Our adaptive learning platform offers O-levels, A-levels, and Entry Test preparation courses utilizing cognitive science and expert AI Agents.',
+  keywords: ['AI learning platform', 'O-levels AI prep', 'A-levels AI prep', 'adaptive learning software', 'Cambridge International exams', 'MDCAT AI preparation', 'educational technology', 'formative assessments'],
+  openGraph: {
+    title: 'AI-Native Academic Courses | Classroom AI',
+    description: 'Master your syllabus 3x faster with AI-guided learning tracks for Cambridge and Federal boards.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI-Native Academic Courses | Classroom AI',
+    description: 'Accelerate your academic performance with Classroom AI adaptive learning.',
+  }
 }
+
 // 1. Extracted Data for maintainability
 const COURSES = [
   {
     code: "O-101",
-    title: "O-levels || Cambridge International Education System",
-    description: "Comprehensive preparation for O-levels exams with expert guidance of AI Agents.",
+    title: "O-levels | Cambridge International Education",
+    description: "Master O-level syllabi with our AI-driven cognitive toolkit. Adaptive learning algorithms increase retention and improve exam readiness by up to 98%.",
     image: "https://i.postimg.cc/cLkH17WH/Untitled-design-(3).png",
     href: "/courses/O-levels",
     isOpen: true,
   },
   {
     code: "A-101",
-    title: "A-levels || Cambridge International Education System",
-    description: "Comprehensive preparation for A-levels exams with expert guidance of AI Agents.",
+    title: "A-levels | Cambridge International Education",
+    description: "Advanced A-levels preparation utilizing natural language processing (NLP) and formative assessments to accelerate comprehension efficiency by 40%.",
     image: "https://i.postimg.cc/cLkH17WH/Untitled-design-(3).png",
     href: "/courses/A-levels",
     isOpen: true,
   },
   {
     code: "FBISE-101",
-    title: "Federal Board of Intermediate and Secondary Education",
-    description: "Comprehensive preparation for FBISE exams with expert guidance of AI Agents.",
+    title: "Federal Board (FBISE) Curriculum Track",
+    description: "Data-driven FBISE exam preparation. Our AI models analyze past papers to optimize study paths and boost student engagement by over 60%.",
     image: "https://i.postimg.cc/HLmSxM9r/Untitled-design-(6).jpg",
     href: "/courses",
     isOpen: false,
   },
   {
     code: "EN-101",
-    title: "Entry Test preparation for Engineering and Medical Universities",
-    description: "AI Assisted preparation for MDCAT || NUST || NET || ECAT || NTS exams",
+    title: "University Entry Tests (MDCAT, NUST, ECAT)",
+    description: "High-performance AI coaching for competitive entry tests. Benefit from generative AI models that simulate real exam environments to increase success rates.",
     image: "https://i.postimg.cc/76HwgfwR/Entry-Tests.jpg",
     href: "/courses",
     isOpen: false,
   },
   {
     code: "AI-220",
-    title: "Punjab Board of Intermediate and Secondary Education",
-    description: "",
+    title: "Punjab Board (BISE) Curriculum Track",
+    description: "Personalized BISE learning paths. Leverage machine learning to identify knowledge gaps and automate repetitive learning tasks, saving 10+ hours a week.",
     image: "https://i.postimg.cc/R0GTZDFB/Untitled-design-(7).jpg",
     href: "/courses",
     isOpen: false,
   },
   {
     code: "VU-101",
-    title: "Virtual University of Pakistan",
-    description: "Study for VU exams with expert guidance of AI Agents.",
+    title: "Virtual University of Pakistan Modules",
+    description: "Optimize VU exam preparation with intelligent tutoring systems. Gain immediate, contextual feedback to master complex university-level concepts.",
     image: "https://i.postimg.cc/vHLhKTsc/Untitled-design-(8).jpg",
     href: "/courses",
     isOpen: false,
@@ -59,8 +71,33 @@ const COURSES = [
 ];
 
 export default function CoursesPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": COURSES.map((course, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Course",
+        "name": course.title,
+        "description": course.description,
+        "courseCode": course.code,
+        "provider": {
+          "@type": "Organization",
+          "name": "Classroom AI",
+          "sameAs": "https://classroomai.com"
+        }
+      }
+    }))
+  };
+
   return (
     <section className="light overflow-x-hidden bg-white text-zinc-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero Section */}
       <div className="mb-32 w-full bg-slate-900 bg-teamBg bg-cover bg-center">
         <div className="min-h-48 w-full py-2 text-center backdrop-blur-[1px] backdrop-brightness-75 sm:min-h-52 sm:py-10 md:min-h-72 lg:min-h-[26rem]">
@@ -91,7 +128,6 @@ export default function CoursesPage() {
               {/* Promo Card */}
               <div className="mx-auto my-5 max-w-[520px] px-3">
                 <a
-                  // href="https://agentfactory.panaversity.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative block overflow-hidden rounded-xl border border-white/20 bg-gradient-to-br from-emerald-50 to-teal-50 p-5 shadow-xl transition-all hover:scale-[1.02]"
@@ -101,7 +137,7 @@ export default function CoursesPage() {
                       <div className="text-base font-bold text-gray-800 md:text-xl">
                         Start your <span className="text-emerald-600">AI-Native Journey</span>
                       </div>
-                      <div className="text-sm text-gray-600">Read AI Native Get started Guide</div>
+                      <div className="text-sm text-gray-600">Read the definitive AI Native Get Started Guide</div>
                     </div>
                     <div className="flex items-center rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-white shadow-lg">
                       <span className="text-xs font-semibold">Read for free</span>
@@ -118,7 +154,7 @@ export default function CoursesPage() {
       {/* Courses Grid */}
       <div className="mx-auto mt-8 px-4 sm:px-6 lg:max-w-[990px] lg:px-8 xl:max-w-[1200px]">
         <h2 className="font-poppins mb-10 mt-10 w-fit border-b border-black text-md font-medium uppercase tracking-wide sm:text-lg">
-          AI Development & Infrastructure Track
+          Cognitive Academic Tracks
         </h2>
 
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:gap-[75px] xl:grid-cols-3">
@@ -140,11 +176,11 @@ export default function CoursesPage() {
                         Code: <span className="font-bold underline decoration-emerald-500">{course.code}</span>
                       </h6>
                       <span className={`rounded-xl px-2 py-1 text-[10px] text-white ${course.isOpen ? 'bg-green-500' : 'bg-gray-700'}`}>
-                        {course.isOpen ? 'Registration Open' : 'Comming Soon !'}
+                        {course.isOpen ? 'Registration Open' : 'Coming Soon'}
                       </span>
                     </div>
                     <div>
-                      <h4 className="font-poppins mb-2 text-lg font-bold line-clamp-2">{course.title}</h4>
+                      <h3 className="font-poppins mb-2 text-lg font-bold line-clamp-2">{course.title}</h3>
                       <p className="text-sm text-gray-600 line-clamp-3">{course.description}</p>
                     </div>
                   </div>
