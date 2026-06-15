@@ -37,10 +37,10 @@ export default function Top() {
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <button
-                aria-label="Go to courses offered page"
+              <a
+                aria-label="Get Started"
+                href="https://app.classroomai.site/"
                 className={`${inter.className} bg-[#1CD98E] cursor-pointer group relative inline-flex items-center overflow-hidden rounded-[40px] bg-accent px-6 py-2.5 text-sm font-semibold text-textPrimary hover:bg-white hover:border-2 border-2 border-white hover:border-[#1CD98E] hover:text-black sm:px-12 sm:py-4 sm:text-[0.9rem] text-white`}
-                onClick={() => setIsModalOpen(true)}
               >
                 <span className="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-transparent opacity-100 transition-all group-hover:top-0 group-hover:h-full"></span>
                 <span className="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0">
@@ -60,7 +60,7 @@ export default function Top() {
                   </svg>
                 </span>
                 <span className="relative">Start Your Journey</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

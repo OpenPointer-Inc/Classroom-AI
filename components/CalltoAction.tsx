@@ -16,9 +16,10 @@ export default function CalltoAction() {
             <p className="font-inter mb-6 text-[0.9rem] text-background/90 md:text-[1rem] max-w-3xl mx-auto">
               Ditch the static video lectures and generic coursework. Join thousands of students using generative AI study copilots to achieve deeper comprehension and 3x faster learning. Experience the power of an adaptive learning system with our free Beginner plan today.
             </p>
-            <button
-              aria-label="Open Coming Soon Dialog"
-              onClick={() => setIsModalOpen(true)}
+            <a
+              aria-label="Open our app and start your free session"
+              href="https://app.classroomai.site/"
+                rel="noopener noreferrer"
               className="font-inter group relative inline-flex items-center overflow-hidden rounded-[40px] bg-background px-8 py-2 text-[1rem] font-semibold text-textPrimary hover:bg-accent hover:text-textPrimary md:px-14 md:py-4 transition-all duration-300 cursor-pointer"
             >
               <span className="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-transparent opacity-100 transition-all group-hover:top-0 group-hover:h-full"></span>
@@ -38,7 +39,7 @@ export default function CalltoAction() {
                 </svg>
               </span>
               <span className="relative">Start Your Free Session</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

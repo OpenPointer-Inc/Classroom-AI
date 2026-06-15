@@ -120,9 +120,12 @@ export default function Navigation() {
           {/* Right Side: Get Started Button and Mobile Menu */}
           <div className="flex items-center gap-4">
             <div className="mt-4 hidden lg:flex w-[105.9px] xl:w-[123.2px]">
-              <button
-                aria-label="Open Coming Soon Dialog"
-                onClick={() => setIsModalOpen(true)}
+              
+              
+              <a
+                aria-label="Get started with our app"
+                href="https://app.classroomai.site/"
+                rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-start overflow-hidden rounded-full px-3 py-2 font-bold md:px-4 lg:px-5 lg:py-3 cursor-pointer"
               >
                 <span className="absolute left-0 top-0 h-32 w-32 -translate-y-2 translate-x-12 rotate-45 bg-[#1CD98E] opacity-[3%]"></span>
@@ -131,7 +134,7 @@ export default function Navigation() {
                   Get Started
                 </span>
                 <span className="absolute inset-0 rounded-full border-2 border-[#1CD98E]"></span>
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}

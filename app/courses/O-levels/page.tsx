@@ -7,16 +7,16 @@ export const metadata: Metadata = {
 }
 // --- DATA STRUCTURES ---
 const MODULES = [
-    {
-        id: 1,
-        title: "Mathematics: AI Taught Maths",
-        description: "Master O-Level Maths with Classroom AI, your 24/7 adaptive tutor. From algebra to calculus, our AI-powered learning builds exam-ready confidence for Cambridge assessments."
-    },
-    {
-        id: 2,
-        title: "English: AI Taught English",
-        description: "Ace Cambridge English with AI-driven tutoring tailored for O-Level students. Get instant feedback on essays, comprehension, and grammar — and write with clarity every time."
-    },
+    // {
+    //     id: 1,
+    //     title: "Mathematics: AI Taught Maths",
+    //     description: "Master O-Level Maths with Classroom AI, your 24/7 adaptive tutor. From algebra to calculus, our AI-powered learning builds exam-ready confidence for Cambridge assessments."
+    // },
+    // {
+    //     id: 2,
+    //     title: "English: AI Taught English",
+    //     description: "Ace Cambridge English with AI-driven tutoring tailored for O-Level students. Get instant feedback on essays, comprehension, and grammar — and write with clarity every time."
+    // },
     {
         id: 3,
         title: "Physics: AI Taught Physics",
@@ -37,11 +37,11 @@ const MODULES = [
         title: "Biology: AI Taught Biology",
         description: "Bring biology to life with Classroom AI's adaptive learning platform for Cambridge O-Level. Master cells, genetics, and ecosystems with personalised lessons and smarter revision."
     },
-    {
-        id: 7,
-        title: "Islamiyat: AI Taught Islamiyat",
-        description: "Study Cambridge O-Level Islamiyat with culturally sensitive, curriculum-aligned AI tutoring. Classroom AI helps students engage deeply with Quranic studies, Hadith, and Islamic history."
-    }
+    // {
+    //     id: 7,
+    //     title: "Islamiyat: AI Taught Islamiyat",
+    //     description: "Study Cambridge O-Level Islamiyat with culturally sensitive, curriculum-aligned AI tutoring. Classroom AI helps students engage deeply with Quranic studies, Hadith, and Islamic history."
+    // }
 ];
 
 const OUTCOMES = [
@@ -74,7 +74,7 @@ export default function CourseDetailPage() {
                                         <ChevronRight />
                                     </li>
                                     <li className="flex items-center">
-                                        <Link href="/flagship-program/courses" className="hover:underline">Courses</Link>
+                                        <Link href="/courses" className="hover:underline">Courses</Link>
                                         <ChevronRight />
                                     </li>
                                     <li className="opacity-80">O-levels</li>
@@ -131,9 +131,9 @@ export default function CourseDetailPage() {
                                                 </div>
                                             </div>
 
-                                            <button className="flex cursor-pointer w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
+                                            <a href='https://app.classroomai.site/' className="flex cursor-pointer w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
                                                 Enroll Now <ChevronRight className="ml-2 h-5 w-5" />
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

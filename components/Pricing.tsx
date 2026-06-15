@@ -209,7 +209,7 @@ export default function Pricing() {
                             </ul>
 
                             <motion.a
-                                href={plan.name === 'Schools' ? '/contact' : '#'}
+                                href={plan.name === 'Schools' ? '/contact' : 'https://app.classroomai.site/'}
                                 whileTap={{ scale: 0.98 }}
                                 className={`w-full cursor-pointer py-4 rounded-xl font-bold tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${plan.isPopular
                                     ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-300'

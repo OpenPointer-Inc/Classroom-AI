@@ -74,7 +74,7 @@ export default function CourseDetailPage() {
                                         <ChevronRight />
                                     </li>
                                     <li className="flex items-center">
-                                        <Link href="/flagship-program/courses" className="hover:underline">Courses</Link>
+                                        <Link href="/courses" className="hover:underline">Courses</Link>
                                         <ChevronRight />
                                     </li>
                                     <li className="opacity-80">A-levels</li>
@@ -131,9 +131,9 @@ export default function CourseDetailPage() {
                                                 </div>
                                             </div>
 
-                                            <button className="flex cursor-pointer w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
+                                            <a href='https://app.classroomai.site/' className="flex cursor-pointer w-full items-center justify-center rounded-md bg-emerald-600 py-3 font-semibold text-white transition hover:bg-emerald-700">
                                                 Enroll Now <ChevronRight className="ml-2 h-5 w-5" />
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
