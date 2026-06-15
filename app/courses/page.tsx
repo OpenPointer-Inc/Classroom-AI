@@ -152,7 +152,7 @@ export default function CoursesPage() {
       </div>
 
       {/* Courses Grid */}
-      <div className="mx-auto mt-8 px-4 sm:px-6 lg:max-w-[990px] lg:px-8 xl:max-w-[1200px]">
+      <div className="mb-24 mx-auto mt-8 px-4 sm:px-6 lg:max-w-[990px] lg:px-8 xl:max-w-[1200px]">
         <h2 className="font-poppins mb-10 mt-10 w-fit border-b border-black text-md font-medium uppercase tracking-wide sm:text-lg">
           Cognitive Academic Tracks
         </h2>
