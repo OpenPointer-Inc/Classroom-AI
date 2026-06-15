@@ -11,9 +11,9 @@ export default function Home() {
   const jsonLd: WithContext<SoftwareApplication> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Classroom AI",
+    "name": "Classroom AI: O-levels Preparation App",
     // "image": "https://classroomai.org/og-image.png",
-    "description": "Classroom AI is an advanced AI-powered Learning Management System (LMS) that helps high school students learn faster and more effectively. We offer comprehensive O-levels, A-levels, Federal board, and Lahore Board curricula taught by adaptive AI agents. According to research, our personalized learning experience improves knowledge retention by up to 98%.",
+    "description": "Classroom AI is an advanced AI-powered Learning App for O-levels students. Our platform offers personalized learning experiences and gamified content to help students excel in their O-levels exams.",
     "operatingSystem": "Windows, macOS, Linux, Web Browser",
     "applicationCategory": "EdTech, Education",
     "aggregateRating": {
@@ -23,7 +23,7 @@ export default function Home() {
     },
     "offers": {
       "@type": "Offer",
-      "price": "31.99",
+      "price": "12.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/OnlineOnly",
     },
@@ -36,7 +36,7 @@ export default function Home() {
       "Interactive Classes by AI Tutors",
       "Personalized Learning Experience"
     ],
-    "keywords": "AI powered Education, Generative AI in Education, EdTech LMS, Classroom AI, personalized learning algorithms, interactive AI Tutors, Openpointer, Cambridge O-levels online, AI-driven A-levels",
+    "keywords": "classroom ai, O-levels, olevels, Cambridge, Classroom AI, olevels learning app, personalized learning, Openpointer, Cambridge O-levels online",
     "creator": {
       "@type": "Organization",
       "@id": "https://classroomai.site",
